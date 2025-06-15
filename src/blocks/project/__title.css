@@ -1,0 +1,5 @@
+.project__title {
+  color: var(--light-accent-color, #d5b87c);
+  font-size: var(--text-fs, 20px);
+  line-height: 100%;
+}

@@ -1,0 +1,14 @@
+.projects__list {
+  /* display: flex; */
+  display: grid;
+  grid-template-columns: repeat(3, calc(50% - 10px));
+  overflow-y: auto;
+    gap: var(--m-gap, 20px);
+}
+
+@media (width < 920px) {
+  
+  .projects__list {
+    grid-template-columns: repeat(3, calc(100% - 20px));
+  }
+}

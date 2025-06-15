@@ -1,0 +1,6 @@
+.content-wrapper {
+  max-inline-size: 1440px;
+  margin: 0 auto;
+  padding-inline: var(--content-wrapper-gap, 20px);
+  padding-block: 40px;
+}

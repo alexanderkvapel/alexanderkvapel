@@ -1,0 +1,14 @@
+.article-contact {
+  display: flex;
+  flex-direction: column;
+  gap: var(--s-gap, 10px);
+  inline-size: 80%;
+}
+
+@media (width < 920px) {
+  
+  .article-contact {
+    inline-size: 100%;
+    grid-row: 1;
+  }
+}

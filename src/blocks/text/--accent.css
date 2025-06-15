@@ -1,0 +1,6 @@
+.text--accent {
+  color: var(--dark-accent-color, #1b6e6d);
+  font-size: var(--accent-text-fs, 24px);
+  line-height: 130%;
+  text-transform: uppercase;
+}

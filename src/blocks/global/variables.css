@@ -1,0 +1,24 @@
+:root {
+  --font: 'Source Code Pro';
+  --main-fs: 16px;
+  --h1-fs: 64px;
+  --title-fs: 42px;
+  --subtitle-fs: 28px;
+  --text-fs: 20px;
+  --accent-text-fs: 24px;
+
+  --xs-gap: 5px;
+  --s-gap: 10px;
+  --m-gap: 20px;
+  --l-gap: 30px;
+  --xl-gap: 40px;
+  --content-wrapper-gap: 20px;
+  --nav-gap: 20px;
+
+  --btn-border-radius: 10px;
+
+  --bg-color: #02030e;
+  --text-color: #c2c6dd;
+  --light-accent-color: #d5b87c;
+  --dark-accent-color: #1b6e6d;
+}

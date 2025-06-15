@@ -1,0 +1,19 @@
+.contacts__list-item img {
+  block-size: 24px;
+  inline-size: 24px;
+}
+
+.contact .contacts__list-item a {
+  display: flex;
+  gap: var(--s-gap, 10px);
+}
+
+.footer .contacts__list-item {
+  block-size: 24px;
+  inline-size: 24px;
+}
+
+.footer .contacts__list-item img {
+  block-size: 100%;
+  inline-size: 100%;
+}

@@ -1,0 +1,4 @@
+.project__text {
+  font-size: var(--main-fs, 16px);
+  line-height: 100%;
+}

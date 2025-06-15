@@ -1,0 +1,5 @@
+.button-wrapper {
+  display: flex;
+  gap: var(--m-gap, 20px);
+  flex-wrap: wrap;
+}

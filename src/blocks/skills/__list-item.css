@@ -1,0 +1,9 @@
+.skills__list-item {
+  display: flex;
+  gap: var(--s-gap, 10px);
+}
+
+.skills__list-item img {
+  block-size: 24px;
+  inline-size: 24px;
+}

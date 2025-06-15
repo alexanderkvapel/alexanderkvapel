@@ -1,0 +1,23 @@
+.project__preview {
+  inline-size: 100%;
+  border: 3px solid transparent;
+  border-radius: 10px;
+}
+
+.project__preview img {
+  inline-size: 100%;
+  block-size: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.project__preview:hover {
+  border-color: var(--dark-accent-color);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+
+  .project__preview {
+    transition: border-color .3s;
+  }
+}

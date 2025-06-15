@@ -1,0 +1,31 @@
+@font-face {
+  font-family: 'Source Code Pro';
+  src: 
+    url(./SourceCodePro-Light.ttf) format('truetype');
+  font-weight: 300;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Source Code Pro';
+  src: 
+    url(./SourceCodePro-Regular.ttf) format('truetype');
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Source Code Pro';
+  src: 
+    url(./SourceCodePro-SemiBold.ttf) format('truetype');
+  font-weight: 600;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Source Code Pro';
+  src: 
+    url(./SourceCodePro-Bold.ttf) format('truetype');
+  font-weight: 700;
+  font-display: swap;
+}

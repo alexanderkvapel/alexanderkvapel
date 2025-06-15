@@ -1,0 +1,6 @@
+.form__textfield {
+  border: 1px solid var(--text-color, #c2c6dd);
+  border-radius: 10px;
+  background-color: transparent;
+  padding: var(--s-gap);
+}

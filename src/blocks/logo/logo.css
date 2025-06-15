@@ -1,0 +1,18 @@
+.logo {
+  inline-size: 280px;
+  block-size: 28px;
+}
+
+.logo p {
+  font-size: 24px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+@media (width < 920px) {
+
+  .logo {
+    grid-column: 1;
+    grid-row: 1;
+  }
+}
