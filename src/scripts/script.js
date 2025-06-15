@@ -36,6 +36,8 @@ window.addEventListener('resize', () => {
   addClassOnWidth(menu, 'hidden', 920);
 });
 
+addClassOnWidth(menu, 'hidden', 920);
+
 function addClassOnWidth(element, className, maxWidth) {
   const currentWidth = document.documentElement.clientWidth;
 

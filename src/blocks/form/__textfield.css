@@ -3,4 +3,21 @@
   border-radius: 10px;
   background-color: transparent;
   padding: var(--s-gap);
+  font-size: inherit;
+  font-weight: inherit;
+  color: var(--text-color, #c2c6dd);
+  caret-color: var(--text-color, #c2c6dd);
+}
+
+textarea.form__textfield {
+  resize: none;
+}
+
+.form__textfield:focus {
+  outline: none;
+}
+
+.form__textfield:focus-visible {
+  border-color: var(--dark-accent-color, #1b6e6d);
+  box-shadow: 4px 0 16px 0 var(--dark-accent-color, #1b6e6d);
 }
