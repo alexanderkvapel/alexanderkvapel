@@ -1,11 +1,10 @@
 const menuButton = document.querySelector('.menu-button');
+const menuButtonSVG = document.querySelector('.menu-button img');
 const menu = document.querySelector('.menu');
 const menuItem = document.querySelectorAll('button[data-scroll-to^="#"]');
 const main = document.querySelector('.main');
 
 menuButton.addEventListener('click', function () {
-  const menuButtonSVG = document.querySelector('.menu-button img');
-
   if (menu.style.display == 'block') {
     menu.style.display = 'none';
     main.style.display = 'block';
@@ -18,7 +17,6 @@ menuButton.addEventListener('click', function () {
 });
 
 window.addEventListener('resize', function () {
-  const menuButtonSVG = document.querySelector('.menu-button img');
   const currentWidth = this.innerWidth;
   const breakpoint = 920;
 
@@ -40,6 +38,7 @@ menuItem.forEach((anchor) => {
     if (currentWidth < breakpoint) {
       menu.style.display = 'none';
       main.style.display = 'block';
+      menuButtonSVG.setAttribute('src', './images/burger-closed.svg');
     }
 
     e.preventDefault();
