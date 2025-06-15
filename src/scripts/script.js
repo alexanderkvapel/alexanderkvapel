@@ -1,40 +1,45 @@
 const menuButton = document.querySelector('.menu-button');
 const menu = document.querySelector('.menu');
+const menuItem = document.querySelectorAll('button[data-scroll-to^="#"]');
 const main = document.querySelector('.main');
 
-document.querySelectorAll('button[data-scroll-to^="#"]').forEach(anchor => {
-  anchor.addEventListener('click', function(e) {
-    const currentWidth = document.documentElement.clientWidth;
+menuButton.addEventListener('click', function () {
+  if (menu.style.display == 'block') {
+    menu.style.display = 'none';
+    main.style.display = 'block';
+  } else {
+    menu.style.display = 'block';
+    main.style.display = 'none';
+  }
+});
 
-    if (currentWidth < 920) {
-      menu.classList.add('hidden');
-      main.classList.remove('hidden');
+window.addEventListener('resize', function () {
+  const currentWidth = this.innerWidth;
+  const breakpoint = 920;
+
+  if (currentWidth >= breakpoint) {
+    menu.style.display = 'block';
+    main.style.display = 'block';
+  } else if (currentWidth < breakpoint) {
+    menu.style.display = 'none';
+    main.style.display = 'block';
+  }
+});
+
+menuItem.forEach((anchor) => {
+  anchor.addEventListener('click', function (e) {
+    const currentWidth = window.innerWidth;
+    const breakpoint = 920;
+
+    if (currentWidth < breakpoint) {
+      menu.style.display = 'none';
+      main.style.display = 'block';
     }
 
     e.preventDefault();
 
     document.querySelector(this.getAttribute('data-scroll-to')).scrollIntoView({
-      behavior: 'smooth'
+      behavior: 'smooth',
     });
   });
 });
-
-menuButton.addEventListener('click', function() {
-  menu.classList.toggle('hidden');
-  main.classList.toggle('hidden');
-});
-
-window.addEventListener('resize', () => {
-  addClassOnWidth(menu, 'hidden', 920);
-});
-
-function addClassOnWidth(element, className, maxWidth) {
-  const currentWidth = document.documentElement.clientWidth;
-
-  if (currentWidth < maxWidth) {
-    element.classList.add(className);
-  } else {
-    element.classList.remove(className);
-    main.classList.remove(className);
-  }
-}

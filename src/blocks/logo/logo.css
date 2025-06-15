@@ -1,5 +1,5 @@
 .logo {
-  inline-size: 280px;
+  inline-size: 270px;
   block-size: 28px;
 }
 
@@ -8,6 +8,7 @@
   letter-spacing: 2px;
   text-transform: uppercase;
   cursor: default;
+  text-align: center;
 }
 
 @media (width < 920px) {
