@@ -1,17 +1,17 @@
 .project__preview {
   inline-size: 100%;
-  border: 3px solid transparent;
-  border-radius: 10px;
 }
 
 .project__preview img {
+  border: 3px solid transparent;
+  border-radius: 10px;
   inline-size: 100%;
   block-size: 100%;
   object-fit: cover;
   object-position: center;
 }
 
-.project__preview:hover {
+.project__preview img:hover {
   border-color: var(--dark-accent-color);
 }
 
