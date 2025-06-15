@@ -1,6 +1,6 @@
 .article-contact__title {
   color: var(--light-accent-color, #d5b87c);
   font-weight: 300;
-  line-height: 100%;
   font-size: var(--subtitle-fs, 28px);
+  line-height: 100%;
 }

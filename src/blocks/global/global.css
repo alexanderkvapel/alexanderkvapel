@@ -4,9 +4,13 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-padding-block-start: 68px;
+}
+
 body {
-  min-inline-size: 375px;
   margin: 0;
+  min-inline-size: 375px;
 }
 
 h1,
@@ -48,4 +52,22 @@ fieldset {
 
 input {
   appearance: none;
+}
+
+a:focus {
+  outline: none;
+}
+
+a:focus-visible {
+  outline: 1px solid var(--text-color, #c2c6dd);
+  outline-offset: 2px;
+}
+
+button:focus {
+  outline: none;
+}
+
+button:focus-visible {
+  outline: 1px solid var(--text-color, #c2c6dd);
+  outline-offset: 2px;
 }

@@ -1,9 +1,9 @@
 .projects__list {
-  /* display: flex; */
   display: grid;
   grid-template-columns: repeat(3, calc(50% - 10px));
+  gap: var(--m-gap, 20px);
+  padding: var(--xs-gap, 5px);
   overflow-y: auto;
-    gap: var(--m-gap, 20px);
 }
 
 @media (width < 920px) {

@@ -6,19 +6,19 @@
 .footer > .content-wrapper {
   display: grid;
   grid-template-columns: 1fr min-content 1fr;
-  padding-block: var(--content-wrapper-gap, 20px);
   align-items: center;
+  padding-block: var(--content-wrapper-gap, 20px);
 }
 
 .footer::after {
+    content: '';
     position: absolute;
+    box-shadow: 0 -2px 6px 0 var(--light-accent-color, #d5b87c);
+    background-color: var(--light-accent-color, #d5b87c);
     inset-inline-start: 0;
     inset-block-start: 0;
-    content: '';
     inline-size: 100%;
     block-size: 1px;
-    background-color: var(--light-accent-color, #d5b87c);
-    box-shadow: 0 -2px 6px 0 var(--light-accent-color, #d5b87c);
 }
 
 @media (width < 920px) {

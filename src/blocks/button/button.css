@@ -1,20 +1,21 @@
 .button {
-  font-size: var(--accent-text-fs, 24px);
-  font-weight: 600;
+  border: 1px solid var(--light-accent-color, #d5b87c);
   border-radius: var(--btn-border-radius, 10px);
   padding: 10px;
-  border: 1px solid var(--light-accent-color, #d5b87c);
+  font-weight: 600;
+  font-size: var(--accent-text-fs, 24px);
   background-color: transparent;
+  cursor: pointer;
 }
 
 .button--filled {
-  background-color: var(--light-accent-color, #d5b87c);
   color: var(--bg-color);
+  background-color: var(--light-accent-color, #d5b87c);
 }
 
 .button--bordered {
-  background-color: transparent;
   color: var(--light-accent-color, #d5b87c);
+  background-color: transparent;
 }
 
 .button:hover {

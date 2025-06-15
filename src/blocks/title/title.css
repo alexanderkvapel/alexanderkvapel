@@ -1,15 +1,15 @@
 .title {
   color: var(--light-accent-color, #d5b87c);
   font-weight: 300;
-  line-height: 100%;
   font-size: var(--title-fs, 42px);
+  line-height: 100%;
   text-transform: uppercase;
 }
 
 .hero .title {
+  margin-block-end: var(--s-gap, 10px);
   font-size: var(--h1-fs, 64px);
   line-height: 150%;
-  text-shadow: 2px 0 12px var(--light-accent-color, #d5b87c);
   text-transform: capitalize;
-  margin-block-end: var(--s-gap, 10px);
+  text-shadow: 2px 0 12px var(--light-accent-color, #d5b87c);
 }

@@ -13,15 +13,7 @@ document.querySelectorAll('button[data-scroll-to^="#"]').forEach(anchor => {
 
     e.preventDefault();
 
-    // document.querySelector(this.getAttribute('data-scroll-to')).scrollIntoView({
-    //   behavior: 'smooth'
-    // });
-
-    const yOffset = -30;
-    const element = document.getElementById(this.getAttribute('data-scroll-to').slice(1));
-    const y = element.getBoundingClientRect().top + window.scrollY + yOffset;
-    window.scrollTo({
-      top: y, 
+    document.querySelector(this.getAttribute('data-scroll-to')).scrollIntoView({
       behavior: 'smooth'
     });
   });

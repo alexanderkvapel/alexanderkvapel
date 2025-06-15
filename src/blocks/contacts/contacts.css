@@ -3,9 +3,9 @@
 }
 
 .contact .contacts {
-  inline-size: 80%;
   grid-column: 1;
   grid-row: 2;
+  inline-size: 80%;
 }
 
 .contact .contacts {
@@ -19,8 +19,8 @@
   }
 
   .contact .contacts {
-    inline-size: 100%;
     grid-row: 3;
+    inline-size: 100%;
   }
 }
 

@@ -1,11 +1,11 @@
 .menu-button {
   display: none;
   justify-self: end;
+  border: none;
+  background-color: transparent;
   cursor: pointer;
   block-size: 28px;
   inline-size: 28px;
-  border: none;
-  background-color: transparent;
 }
 
 .menu-button img {

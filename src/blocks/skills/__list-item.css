@@ -7,3 +7,7 @@
   block-size: 24px;
   inline-size: 24px;
 }
+
+.skills__list-item p {
+  cursor: default;
+}

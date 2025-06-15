@@ -1,15 +1,15 @@
 .article-contact {
   display: flex;
   flex-direction: column;
+  justify-self: center;
   gap: var(--s-gap, 10px);
   inline-size: 80%;
-  justify-self: center;
 }
 
 @media (width < 920px) {
   
   .article-contact {
-    inline-size: 100%;
     grid-row: 1;
+    inline-size: 100%;
   }
 }

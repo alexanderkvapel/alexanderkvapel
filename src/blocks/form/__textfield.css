@@ -1,11 +1,11 @@
 .form__textfield {
   border: 1px solid var(--text-color, #c2c6dd);
   border-radius: 10px;
-  background-color: transparent;
   padding: var(--s-gap);
-  font-size: inherit;
-  font-weight: inherit;
   color: var(--text-color, #c2c6dd);
+  font-weight: inherit;
+  font-size: inherit;
+  background-color: transparent;
   caret-color: var(--text-color, #c2c6dd);
 }
 
