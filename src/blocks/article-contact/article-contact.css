@@ -3,6 +3,7 @@
   flex-direction: column;
   gap: var(--s-gap, 10px);
   inline-size: 80%;
+  justify-self: center;
 }
 
 @media (width < 920px) {
