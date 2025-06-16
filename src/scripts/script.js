@@ -6,13 +6,9 @@ const main = document.querySelector('.main');
 
 menuButton.addEventListener('click', function () {
   if (menu.style.display == 'block') {
-    menu.style.display = 'none';
-    main.style.display = 'block';
-    menuButtonSVG.setAttribute('src', './images/burger-closed.svg');
+    menuClose();
   } else {
-    menu.style.display = 'block';
-    main.style.display = 'none';
-    menuButtonSVG.setAttribute('src', './images/burger-opened.svg');
+    menuOpen();
   }
 });
 
@@ -25,8 +21,7 @@ window.addEventListener('resize', function () {
     main.style.display = 'block';
     menuButtonSVG.setAttribute('src', './images/burger-closed.svg');
   } else if (currentWidth < breakpoint) {
-    menu.style.display = 'none';
-    main.style.display = 'block';
+    menuClose();
   }
 });
 
@@ -48,3 +43,15 @@ menuItem.forEach((anchor) => {
     });
   });
 });
+
+function menuClose() {
+  menu.style.display = 'none';
+  main.style.display = 'block';
+  menuButtonSVG.setAttribute('src', './images/burger-closed.svg');
+}
+
+function menuOpen() {
+  menu.style.display = 'block';
+  main.style.display = 'none';
+  menuButtonSVG.setAttribute('src', './images/burger-opened.svg');
+}

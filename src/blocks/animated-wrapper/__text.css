@@ -1,0 +1,24 @@
+.animated-wrapper__text {
+  width: 21.2ch;
+  border-inline-end: 2px solid currentColor;
+  overflow: hidden;
+  color: var(--dark-accent-color, #1b6e6d);
+  font-family: monospace;
+  font-size: var(--accent-text-fs, 24px);
+  line-height: 130%;
+  text-transform: uppercase;
+  animation: typing 2s steps(21), blink .5s step-end infinite alternate;
+  white-space: nowrap;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+    
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
