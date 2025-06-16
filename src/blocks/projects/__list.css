@@ -3,12 +3,13 @@
   grid-template-columns: repeat(3, calc(50% - 10px + 5px));
   gap: var(--m-gap, 20px);
   padding: var(--xs-gap, 5px);
-  overflow-y: auto;
+  overflow-x: auto;
 }
 
 @media (width < 920px) {
   
   .projects__list {
     grid-template-columns: repeat(3, calc(100% - 20px + 5px));
+    scroll-snap-type: x mandatory;
   }
 }

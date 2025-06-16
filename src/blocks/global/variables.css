@@ -2,11 +2,12 @@
   --font: 'Source Code Pro';
   --main-fs: 16px;
   --h1-fs: 64px;
-  --title-fs: 42px;
-  --subtitle-fs: 28px;
+  --title-fs: 32px;
+  --subtitle-fs: 22px;
   --text-fs: 20px;
   --accent-text-fs: 24px;
 
+  --header-block-size: 68px;
   --xs-gap: 5px;
   --s-gap: 10px;
   --m-gap: 20px;

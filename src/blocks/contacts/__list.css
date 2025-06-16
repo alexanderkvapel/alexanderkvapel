@@ -1,6 +1,6 @@
 .contacts__list {
   display: flex;
-  gap: var(--nav-gap, 20px);
+  gap: var(--s-gap, 10px);
 }
 
 .contact .contacts__list {

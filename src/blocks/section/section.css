@@ -1,4 +1,9 @@
 .section {
-  /* scroll-snap-align: center;
-  height: 100vh; */
+  /* display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  scroll-snap-align: start;
+  min-block-size: 729px;
+  block-size: calc(100vh - var(--header-block-size, 68px)); */
+  margin-block: 50px;
 }

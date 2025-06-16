@@ -1,0 +1,6 @@
+@media (width < 920px) {
+  
+  .projects__list-item {
+    scroll-snap-align: center;
+  }
+}

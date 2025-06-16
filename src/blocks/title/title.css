@@ -1,13 +1,12 @@
 .title {
   color: var(--light-accent-color, #d5b87c);
   font-weight: 300;
-  font-size: var(--title-fs, 42px);
+  font-size: var(--title-fs, 32px);
   line-height: 100%;
   text-transform: uppercase;
 }
 
 .hero .title {
-  margin-block-end: var(--s-gap, 10px);
   font-size: var(--h1-fs, 64px);
   line-height: 150%;
   text-transform: capitalize;

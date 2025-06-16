@@ -2,7 +2,7 @@
   position: relative;
   margin-inline-start: var(--m-gap);
   padding-inline-end: 20px;
-  padding-block: 50px;
+  padding-block: var(--xl-gap, 40px);
 }
 
 .article::before {
@@ -30,7 +30,7 @@
 .hero .article {
   display: flex;
   flex-direction: column;
-  gap: var(--s-margin, 10px);
+  gap: var(--s-gap, 10px);
   margin-inline-start: 0;
   margin-block-end: var(--xl-gap, 40px);
   padding-block: 0;
@@ -48,6 +48,7 @@
 .about .article {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  gap: var(--s-gap, 10px);
   justify-items: center;
 }
 
