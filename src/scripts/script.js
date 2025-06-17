@@ -3,6 +3,7 @@ const menuButtonSVG = document.querySelector('.menu-button img');
 const menu = document.querySelector('.menu');
 const menuItem = document.querySelectorAll('button[data-scroll-to^="#"]');
 const main = document.querySelector('.main');
+const animatedText = document.querySelector('.animated-wrapper__text');
 
 menuButton.addEventListener('click', function () {
   if (menu.style.display == 'block') {
@@ -55,3 +56,25 @@ function menuOpen() {
   main.style.display = 'none';
   menuButtonSVG.setAttribute('src', './images/burger-opened.svg');
 }
+
+const animationDuration = 4000;
+const textChanger = () => {
+  setTimeout(() => {
+    animatedText.classList.remove('animated-wrapper__animation--third');
+    animatedText.classList.add('animated-wrapper__animation--first');
+    animatedText.textContent = "Front End Разработчик";
+  }, 0 * animationDuration);
+  setTimeout(() => {
+    animatedText.classList.remove('animated-wrapper__animation--first');
+    animatedText.classList.add('animated-wrapper__animation--second');
+    animatedText.textContent = "Фиксер багов";
+  }, 1 * animationDuration);
+  setTimeout(() => {
+    animatedText.classList.remove('animated-wrapper__animation--second');
+    animatedText.classList.add('animated-wrapper__animation--third');
+    animatedText.textContent = "Любитель JavaScript";
+  }, 2 * animationDuration);
+}
+
+textChanger();
+setInterval(textChanger, 3 * animationDuration);

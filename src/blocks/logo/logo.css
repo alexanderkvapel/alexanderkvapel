@@ -6,9 +6,9 @@
 .logo p {
   font-size: 24px;
   letter-spacing: 2px;
+  text-align: center;
   text-transform: uppercase;
   cursor: default;
-  text-align: center;
 }
 
 @media (width < 920px) {

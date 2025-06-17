@@ -50,8 +50,8 @@ a {
 
 button {
   border: none;
-  background-color: transparent;
   padding: 0;
+  background-color: transparent;
 }
 
 fieldset {
@@ -60,22 +60,4 @@ fieldset {
 
 input {
   appearance: none;
-}
-
-a:focus {
-  outline: none;
-}
-
-a:focus-visible {
-  outline: 1px solid var(--text-color, #c2c6dd);
-  outline-offset: 2px;
-}
-
-button:focus {
-  outline: none;
-}
-
-button:focus-visible {
-  outline: 1px solid var(--text-color, #c2c6dd);
-  outline-offset: 2px;
 }

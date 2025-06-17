@@ -9,6 +9,15 @@
   color: var(--dark-accent-color, #1b6e6d);
 }
 
+.menu__button:focus {
+  outline: none;
+}
+
+.menu__button:focus-visible {
+  outline: 1px solid var(--text-color, #c2c6dd);
+  outline-offset: 2px;
+}
+
 @media (width < 920px) {
 
   :root {

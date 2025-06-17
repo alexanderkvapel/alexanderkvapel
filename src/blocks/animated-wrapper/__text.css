@@ -1,5 +1,4 @@
 .animated-wrapper__text {
-  width: 21.2ch;
   border-inline-end: 2px solid currentColor;
   overflow: hidden;
   color: var(--dark-accent-color, #1b6e6d);
@@ -8,18 +7,48 @@
   font-size: var(--accent-text-fs, 24px);
   line-height: 130%;
   text-transform: uppercase;
-  animation: typing 2s steps(21), blink .5s step-end infinite alternate;
+  max-inline-size: var(--animation-text-inline-size, 21.2ch);
   white-space: nowrap;
 }
 
 @keyframes typing {
-  from {
-    width: 0;
+  0% {
+    inline-size: 0;
+  }
+  50%, 75% {
+    inline-size: 100%;
+  }
+  100% {
+    inline-size: 0;
   }
 }
-    
+
 @keyframes blink {
   50% {
     border-color: transparent;
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+
+  .animated-wrapper__text {
+    animation: 
+      typing 4s steps(var(--animation-steps, 21)) infinite, 
+      blink 0.5s step-end infinite alternate;
+  }
+
+  .animated-wrapper__animation--first {
+    --animation-text-inline-size: 21.2ch;
+    --animation-steps: 21;
+  }
+
+  .animated-wrapper__animation--second {
+    --animation-text-inline-size: 12.2ch;
+    --animation-steps: 12;
+  }
+
+  .animated-wrapper__animation--third {
+    --animation-text-inline-size: 19.2ch;
+    --animation-steps: 19;
   }
 }

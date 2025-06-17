@@ -1,4 +1,9 @@
 :root {
+  --bg-color: #02030e;
+  --text-color: #c2c6dd;
+  --light-accent-color: #d5b87c;
+  --dark-accent-color: #1b6e6d;
+
   --font-main: 'Roboto';
   --font-monospace: 'JetBrains Mono';
 
@@ -14,6 +19,7 @@
   --header-block-size: 68px;
   --svg-logo-size: 32px;
   --textarea-rows: 5em;
+  --animation-text-inline-size: 21.2ch;
 
   --xs-gap: 5px;
   --s-gap: 10px;
@@ -25,8 +31,5 @@
 
   --btn-border-radius: 10px;
 
-  --bg-color: #02030e;
-  --text-color: #c2c6dd;
-  --light-accent-color: #d5b87c;
-  --dark-accent-color: #1b6e6d;
+  --animation-steps: 21;
 }

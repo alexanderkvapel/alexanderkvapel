@@ -15,6 +15,15 @@
   color: var(--dark-accent-color, #1b6e6d);
 }
 
+.footer__sponsors-wrapper a:focus {
+  outline: none;
+}
+
+.footer__sponsors-wrapper a:focus-visible {
+  outline: 1px solid var(--text-color, #c2c6dd);
+  outline-offset: 2px;
+}
+
 @media (width < 920px) {
   
   .footer__sponsors-wrapper {
