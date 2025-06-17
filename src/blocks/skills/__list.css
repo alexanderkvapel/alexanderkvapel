@@ -1,13 +1,6 @@
 .skills__list {
   display: flex;
   flex-direction: column;
-  justify-self: center;
+  justify-content: center;
   gap: var(--nav-gap, 20px);
-}
-
-@media (width < 920px) {
-
-  .skills__list {
-    justify-self: start;
-  }
 }

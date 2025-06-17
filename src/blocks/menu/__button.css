@@ -1,0 +1,17 @@
+.menu__button {
+  font-size: var(--menu-button-fs, 16px);
+  line-height: 100%;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.menu__button:hover {
+  color: var(--dark-accent-color, #1b6e6d);
+}
+
+@media (width < 920px) {
+
+  :root {
+    --menu-button-fs: 24px;
+  }
+}

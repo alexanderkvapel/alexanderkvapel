@@ -28,7 +28,7 @@
     <header class="header">
       <div class="content-wrapper">
         <div class="logo">
-          <p>Alexander Kvapel</p>
+          <p>Alexander&nbsp;Kvapel</p>
         </div>
         <button class="menu-button">
           <img src="./images/burger-closed.svg" alt="Меню." />
@@ -36,16 +36,40 @@
         <nav class="menu">
           <ul class="menu__list">
             <li class="menu__list-item">
-              <button type="button" data-scroll-to="#about">обо мне</button>
+              <button
+                class="menu__button"
+                type="button"
+                data-scroll-to="#about"
+              >
+                обо мне
+              </button>
             </li>
             <li class="menu__list-item">
-              <button type="button" data-scroll-to="#skills">скиллы</button>
+              <button
+                class="menu__button"
+                type="button"
+                data-scroll-to="#skills"
+              >
+                скиллы
+              </button>
             </li>
             <li class="menu__list-item">
-              <button type="button" data-scroll-to="#projects">проекты</button>
+              <button
+                class="menu__button"
+                type="button"
+                data-scroll-to="#projects"
+              >
+                проекты
+              </button>
             </li>
             <li class="menu__list-item">
-              <button type="button" data-scroll-to="#contact">контакты</button>
+              <button
+                class="menu__button"
+                type="button"
+                data-scroll-to="#contact"
+              >
+                контакты
+              </button>
             </li>
           </ul>
         </nav>
@@ -53,86 +77,112 @@
     </header>
     <main class="main">
       <section class="section hero">
-        <div class="content-wrapper"> 
-          <h1 class="title">Александр</h1>
-          <article class="article">
-            <div class="animated-wrapper">
-              <p class="animated-wrapper__text">Front End Разработчик</p>
+        <div class="content-wrapper">
+          <div class="structure-wrapper">
+            <h1 class="title--main">Александр</h1>
+            <article class="article">
+              <div class="animated-wrapper">
+                <p class="animated-wrapper__text">Front End Разработчик</p>
+              </div>
+              <p class="text">
+                Эксперт в использовании best&#8209;practice и нахождении лучших
+                решений на StackOverflow.
+              </p>
+            </article>
+            <div class="button-wrapper">
+              <button
+                class="button button--filled"
+                type="button"
+                data-scroll-to="#contact"
+              >
+                Связаться
+              </button>
+              <button
+                class="button button--bordered"
+                type="button"
+                data-scroll-to="#about"
+              >
+                Узнать больше →
+              </button>
             </div>
-            <p class="text">
-              Эксперт в использовании best&#8209;practice и нахождении лучших
-              решений на StackOverflow.
-            </p>
-          </article>
-          <div class="button-wrapper">
-            <button
-              class="button button--filled"
-              type="button"
-              data-scroll-to="#contact"
-            >
-              Связаться со мной
-            </button>
-            <button
-              class="button button--bordered"
-              type="button"
-              data-scroll-to="#about"
-            >
-              Узнать больше →
-            </button>
           </div>
         </div>
       </section>
       <section class="section about" id="about">
         <div class="content-wrapper">
           <h2 class="title">Обо мне</h2>
-          <article class="article">
-            <p class="text">
-              Я создаю современные и функциональные веб-приложения любой
-              сложности. Постоянно совершенствуюсь, слежу за последними трендами
-              и обновлениями инструментов веб-разработки.
-            </p>
-            <p class="text">
-              Моя цель &mdash; создавать удобные и привлекательные интерфейсы,
-              обеспечивающие комфортное взаимодействие пользователей с вашим
-              продуктом.
-            </p>
+          <article class="article-section">
+            <div class="structure-wrapper">
+              <div class="structure-wrapper__item">
+                <p class="text">
+                  Я создаю современные и функциональные веб-приложения любой
+                  сложности. Постоянно совершенствуюсь, слежу за последними
+                  трендами и обновлениями инструментов веб-разработки.
+                </p>
+              </div>
+              <div class="structure-wrapper__item">
+                <p class="text">
+                  Моя цель &mdash; создавать удобные и привлекательные
+                  интерфейсы, обеспечивающие комфортное взаимодействие
+                  пользователей с вашим продуктом.
+                </p>
+              </div>
+            </div>
           </article>
         </div>
       </section>
       <section class="section skills" id="skills">
         <div class="content-wrapper">
           <h2 class="title">Скиллы</h2>
-          <article class="article">
-            <p class="text">
-              Трудности меня мотивируют и помогают находить пути
-              совершенствования и освоения навыков. Я легко усваиваю новые
-              технологии и адаптируюсь к ним на практике.
-            </p>
-            <ul class="skills__list">
-              <li class="skills__list-item">
-                <img src="./images/logo-html.png" alt="" aria-hidden="true" />
-                <p class="text">HTML</p>
-              </li>
-              <li class="skills__list-item">
-                <img src="./images/logo-css.png" alt="" aria-hidden="true" />
-                <p class="text">CSS</p>
-              </li>
-              <li class="skills__list-item">
-                <img src="./images/logo-js.png" alt="" aria-hidden="true" />
-                <p class="text">JavaScript</p>
-              </li>
-              <li class="skills__list-item">
-                <img src="./images/logo-react.png" alt="" aria-hidden="true" />
-                <p class="text">React</p>
-              </li>
-            </ul>
+          <article class="article-section">
+            <div class="structure-wrapper">
+              <div class="structure-wrapper__item">
+                <p class="text">
+                  Трудности меня мотивируют и помогают находить пути
+                  совершенствования и освоения навыков. Я легко усваиваю новые
+                  технологии и адаптируюсь к ним на практике.
+                </p>
+              </div>
+              <div class="structure-wrapper__item">
+                <ul class="skills__list">
+                  <li class="skills__list-item">
+                    <img
+                      src="./images/logo-html.png"
+                      alt=""
+                      aria-hidden="true"
+                    />
+                    <p class="text">HTML</p>
+                  </li>
+                  <li class="skills__list-item">
+                    <img
+                      src="./images/logo-css.png"
+                      alt=""
+                      aria-hidden="true"
+                    />
+                    <p class="text">CSS</p>
+                  </li>
+                  <li class="skills__list-item">
+                    <img src="./images/logo-js.png" alt="" aria-hidden="true" />
+                    <p class="text">JavaScript</p>
+                  </li>
+                  <li class="skills__list-item">
+                    <img
+                      src="./images/logo-react.png"
+                      alt=""
+                      aria-hidden="true"
+                    />
+                    <p class="text">React</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
           </article>
         </div>
       </section>
       <section class="section projects" id="projects">
         <div class="content-wrapper">
           <h2 class="title">Проекты</h2>
-          <article class="article">
+          <article class="article-section">
             <ul class="projects__list">
               <li class="projects__list-item">
                 <a
@@ -198,84 +248,110 @@
       <section class="section contact" id="contact">
         <div class="content-wrapper">
           <h2 class="title">Контакты</h2>
-          <article class="article">
-            <article class="article-contact">
-              <h3 class="article-contact__title">Хотите реализовать проект со мной?</h3>
-              <p class="text">Заполните форму, и я оперативно свяжусь с вами для обсуждения вашего проекта.</p>
-            </article>
-            <nav class="contacts">
-              <ul class="contacts__list">
-                <li class="contacts__list-item">
-                  <a
-                    href="https://github.com/alexanderkvapel?tab=repositories"
-                    target="_blank"
-                  >
-                    <img src="./images/github.svg" alt="Ссылка на Github." />
-                    <p class="text">alexanderkvapel</p>
-                  </a>
-                </li>
-                <li class="contacts__list-item">
-                  <a href="https://t.me/alexanderkvapel" target="_blank">
-                    <img
-                      src="./images/telegram.svg"
-                      alt="Ссылка на Telegram."
+          <article class="article-section">
+            <div class="structure-wrapper">
+              <div class="structure-wrapper__item">
+                <article class="article">
+                  <h3 class="title--sub">Хотите реализовать проект?</h3>
+                  <p class="text">
+                    Заполните форму, и я свяжусь с вами для
+                    обсуждения проекта.
+                  </p>
+                </article>
+              </div>
+              <div class="structure-wrapper__item">
+                <form
+                  class="form"
+                  action="https://api.web3forms.com/submit"
+                  method="POST"
+                >
+                  <input
+                    type="hidden"
+                    name="access_key"
+                    value="844b0d6a-a409-4705-9d2c-ef3f2f96bfdb"
+                  />
+                  <label class="form__label">
+                    <span class="form__label-text">Электронная почта</span>
+                    <input
+                      type="email"
+                      name="email"
+                      class="form__textfield"
+                      required
                     />
-                    <p class="text">alexanderkvapel</p>
-                  </a>
-                </li>
-                <li class="contacts__list-item">
-                  <a href="mailto:alexanderkvapel@outlook.com" target="_blank">
-                    <img src="./images/email.svg" alt="Ссылка на почту." />
-                    <p class="text">alexanderkvapel@outlook.com</p>
-                  </a>
-                </li>
-              </ul>
-            </nav>
-            <form class="form" action="https://api.web3forms.com/submit" method="POST">
-              <input type="hidden" name="access_key" value="844b0d6a-a409-4705-9d2c-ef3f2f96bfdb">
-              <label class="form__label">
-                <span class="form__label-text">Электронная почта</span>
-                <input
-                  type="email"
-                  name="email"
-                  class="form__textfield"
-                  required
-                />
-              </label>
-              <label class="form__label">
-                <span class="form__label-text">Тема</span>
-                <input
-                  type="text"
-                  name="theme"
-                  class="form__textfield"
-                  required
-                />
-              </label>
-              <label class="form__label">
-                <span class="form__label-text">Сообщение</span>
-                <textarea
-                  name="body"
-                  class="form__textfield"
-                  required
-                  rows="5"
-                ></textarea>
-              </label>
-              <button type="submit" class="button button--filled">
-                Отправить
-              </button>
-            </form>
+                  </label>
+                  <label class="form__label">
+                    <span class="form__label-text">Тема</span>
+                    <input
+                      type="text"
+                      name="theme"
+                      class="form__textfield"
+                      required
+                    />
+                  </label>
+                  <label class="form__label">
+                    <span class="form__label-text">Сообщение</span>
+                    <textarea
+                      name="body"
+                      class="form__textfield"
+                      required
+                    ></textarea>
+                  </label>
+                  <button type="submit" class="button button--filled">
+                    Отправить
+                  </button>
+                </form>
+              </div>
+              <div class="structure-wrapper__item">
+                <nav class="contacts">
+                  <ul class="contacts__list">
+                    <li class="contacts__list-item">
+                      <a
+                        href="https://github.com/alexanderkvapel?tab=repositories"
+                        target="_blank"
+                      >
+                        <img
+                          src="./images/github.svg"
+                          alt="Ссылка на Github."
+                        />
+                        <p class="contacts__text">alexanderkvapel</p>
+                      </a>
+                    </li>
+                    <li class="contacts__list-item">
+                      <a href="https://t.me/alexanderkvapel" target="_blank">
+                        <img
+                          src="./images/telegram.svg"
+                          alt="Ссылка на Telegram."
+                        />
+                        <p class="text">alexanderkvapel</p>
+                      </a>
+                    </li>
+                    <li class="contacts__list-item">
+                      <a
+                        href="mailto:alexanderkvapel@outlook.com"
+                        target="_blank"
+                      >
+                        <img src="./images/email.svg" alt="Ссылка на почту." />
+                        <p class="text">alexanderkvapel@outlook.com</p>
+                      </a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
           </article>
         </div>
       </section>
     </main>
     <footer class="footer">
       <div class="content-wrapper">
-        <div class="footer__powered-wrapper">
-          <p>Powered by Alexander Kvapel</p>
-          <p>Designed by Alexander Kvapel</p>
+        <div class="footer__sponsors-wrapper">
+          <p>
+            Inspired by
+            <a href="https://ddaniel.dev" target="_blank">ddaniel.dev</a>
+          </p>
         </div>
         <div class="logo">
-          <p>Alexander Kvapel</p>
+          <p>Alexander&nbsp;Kvapel</p>
         </div>
         <nav class="contacts">
           <ul class="contacts__list">

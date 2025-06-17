@@ -1,0 +1,19 @@
+.structure-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+  align-items: center;
+  gap: var(--s-gap, 10px);
+}
+
+.hero .structure-wrapper {
+  justify-items: start;
+  align-items: start;
+}
+
+@media (width < 920px) {
+  
+  .structure-wrapper {
+    grid-template-columns: 1fr;
+  }
+}

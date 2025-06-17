@@ -2,22 +2,3 @@
   font-size: var(--text-fs, 20px);
   line-height: 130%;
 }
-
-.about .text {
-  inline-size: 80%;
-}
-
-.skills .text {
-  inline-size: 80%;
-}
-
-@media (width < 920px) {
-
-  .about .text {
-    inline-size: initial;
-  }
-  
-  .skills .text {
-    inline-size: initial;
-  }
-}

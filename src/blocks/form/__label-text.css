@@ -1,0 +1,4 @@
+.form__label-text {
+  font-size: var(--text-fs, 16px);
+  line-height: 100%;
+}

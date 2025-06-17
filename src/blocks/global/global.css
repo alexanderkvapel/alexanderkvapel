@@ -6,7 +6,7 @@
 
 html {
   scroll-behavior: smooth;
-  scroll-padding-block-start: 68px;
+  scroll-padding-block-start: calc(var(--header-block-size, 68px) + 50px);
 }
 
 body {
@@ -46,6 +46,12 @@ a {
   font-family: inherit;
   font-size: inherit;
   line-height: inherit;
+}
+
+button {
+  border: none;
+  background-color: transparent;
+  padding: 0;
 }
 
 fieldset {

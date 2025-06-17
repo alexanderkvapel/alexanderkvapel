@@ -1,31 +1,44 @@
 @font-face {
-  font-family: 'Source Code Pro';
-  src: 
-    url(./SourceCodePro-Light.ttf) format('truetype');
-  font-weight: 300;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Source Code Pro';
-  src: 
-    url(./SourceCodePro-Regular.ttf) format('truetype');
+  font-family: 'Roboto';
+  src:
+    url(./Roboto-Regular.woff2) format('woff2'),
+    url(./Roboto-Regular.ttf) format('truetype');
   font-weight: 400;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Source Code Pro';
-  src: 
-    url(./SourceCodePro-SemiBold.ttf) format('truetype');
-  font-weight: 600;
+  font-family: 'Roboto';
+  src:
+    url(./Roboto-Medium.woff2) format('woff2'),
+    url(./Roboto-Medium.ttf) format('truetype');
+  font-weight: 500;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Source Code Pro';
-  src: 
-    url(./SourceCodePro-Bold.ttf) format('truetype');
+  font-family: 'Roboto';
+  src:
+    url(./Roboto-Bold.woff2) format('woff2'),
+    url(./Roboto-Bold.ttf) format('truetype');
   font-weight: 700;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'JetBrains Mono';
+  src: 
+    url(./JetBrainsMono-Regular.woff2) format('woff2'),
+    url(./JetBrainsMono-Regular.ttf) format('truetype');
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'JetBrains Mono';
+  src: 
+    url(./JetBrainsMono-Medium.ttf) format('woff2'),
+    url(./JetBrainsMono-Medium.ttf) format('truetype');
+  font-weight: 500;
   font-display: swap;
 }

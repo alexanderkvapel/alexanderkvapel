@@ -21,19 +21,6 @@
   margin-inline-end: 5px;
 } */
 
-.menu__list-item button {
-  border: none;
-  padding: 0;
-  line-height: 100%;
-  text-decoration: none;
-  text-transform: uppercase;
-  background-color: transparent;
-}
-
-.menu__list-item button:hover {
-  color: var(--dark-accent-color, #1b6e6d);
-}
-
 @media (width < 920px) {
 
   .menu__list-item::after {

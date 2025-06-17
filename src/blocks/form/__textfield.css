@@ -1,16 +1,18 @@
 .form__textfield {
   border: 1px solid var(--text-color, #c2c6dd);
   border-radius: 10px;
-  padding: var(--s-gap);
+  padding: var(--s-gap, 10px);
   color: var(--text-color, #c2c6dd);
   font-weight: inherit;
-  font-size: inherit;
+  font-size: var(--text-fs, 16px);
+  line-height: 100%;
   background-color: transparent;
   caret-color: var(--text-color, #c2c6dd);
 }
 
 textarea.form__textfield {
   resize: none;
+  block-size: calc(var(--textarea-rows, 5em) + 2 * var(--s-gap, 10px) + 2px);
 }
 
 .form__textfield:focus {
@@ -20,4 +22,11 @@ textarea.form__textfield {
 .form__textfield:focus-visible {
   border-color: var(--dark-accent-color, #1b6e6d);
   box-shadow: 4px 0 16px 0 var(--dark-accent-color, #1b6e6d);
+}
+
+@media (width < 920px) {
+  
+  :root {
+    --textarea-rows: 3em;
+  }
 }

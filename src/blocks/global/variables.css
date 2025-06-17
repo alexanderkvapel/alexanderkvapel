@@ -1,13 +1,20 @@
 :root {
-  --font: 'Source Code Pro';
+  --font-main: 'Roboto';
+  --font-monospace: 'JetBrains Mono';
+
   --main-fs: 16px;
-  --h1-fs: 64px;
-  --title-fs: 32px;
-  --subtitle-fs: 22px;
-  --text-fs: 20px;
-  --accent-text-fs: 24px;
+  --menu-button-fs: 16px;
+  --button-fs: 28px;
+  --h1-fs: clamp(3.25rem, 2.6338rem + 2.6291vw, 5rem);
+  --title-fs: clamp(1.625rem, 1.0088rem + 2.6291vw, 3.375rem);
+  --subtitle-fs: clamp(1.3125rem, 0.9824rem + 1.4085vw, 2.25rem);
+  --text-fs: clamp(1rem, 0.8239rem + 0.7512vw, 1.5rem);
+  --accent-text-fs: clamp(1.3125rem, 1.0704rem + 1.0329vw, 2rem);
 
   --header-block-size: 68px;
+  --svg-logo-size: 32px;
+  --textarea-rows: 5em;
+
   --xs-gap: 5px;
   --s-gap: 10px;
   --m-gap: 20px;

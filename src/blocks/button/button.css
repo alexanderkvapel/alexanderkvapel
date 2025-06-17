@@ -1,9 +1,8 @@
 .button {
-  border: 1px solid var(--light-accent-color, #d5b87c);
   border-radius: var(--btn-border-radius, 10px);
-  padding: 10px;
+  padding: var(--xs-gap, 5px) var(--s-gap, 10px);
   font-weight: 600;
-  font-size: var(--accent-text-fs, 24px);
+  font-size: var(--button-fs, 20px);
   background-color: transparent;
   cursor: pointer;
 }
@@ -14,6 +13,7 @@
 }
 
 .button--bordered {
+  border: 1px solid var(--light-accent-color, #d5b87c);
   color: var(--light-accent-color, #d5b87c);
   background-color: transparent;
 }
@@ -24,8 +24,8 @@
 
 @media (width < 920px) {
 
-  .button {
-    font-size: var(--text-fs, 20px);
+  :root {
+    --button-fs: 20px;
   }
 }
 

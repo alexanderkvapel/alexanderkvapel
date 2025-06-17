@@ -1,19 +1,15 @@
+.contacts__list-item {
+  block-size: var(--svg-logo-size, 32px);
+  inline-size: var(--svg-logo-size, 32px);
+}
+
 .contacts__list-item img {
-  block-size: 24px;
-  inline-size: 24px;
+  block-size: 100%;
+  inline-size: 100%;
 }
 
 .contact .contacts__list-item a {
   display: flex;
+  align-items: center;
   gap: var(--s-gap, 10px);
-}
-
-.footer .contacts__list-item {
-  block-size: 24px;
-  inline-size: 24px;
-}
-
-.footer .contacts__list-item img {
-  block-size: 100%;
-  inline-size: 100%;
 }

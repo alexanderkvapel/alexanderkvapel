@@ -1,5 +1,6 @@
 .button-wrapper {
   display: flex;
   flex-wrap: wrap;
-  gap: var(--m-gap, 20px);
+  gap: var(--s-gap, 10px);
+  grid-column: 1;
 }
