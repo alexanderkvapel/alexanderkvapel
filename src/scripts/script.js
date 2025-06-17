@@ -6,20 +6,24 @@ const main = document.querySelector('.main');
 const animatedText = document.querySelector('.animated-wrapper__text');
 
 menuButton.addEventListener('click', function () {
-  if (menu.style.display == 'block') {
-    menuClose();
-  } else {
+  if (menu.classList.contains('visually-hidden')) {
     menuOpen();
+  } else {
+    menuClose();
   }
 });
+
+if (document.documentElement.clientWidth < 920) {
+  menu.classList.add('visually-hidden');
+}
 
 window.addEventListener('resize', function () {
   const currentWidth = this.innerWidth;
   const breakpoint = 920;
 
   if (currentWidth >= breakpoint) {
-    menu.style.display = 'block';
-    main.style.display = 'block';
+    menu.classList.remove('visually-hidden');
+    main.classList.remove('visually-hidden');
     menuButtonSVG.setAttribute('src', './images/burger-closed.svg');
   } else if (currentWidth < breakpoint) {
     menuClose();
@@ -32,9 +36,7 @@ menuItem.forEach((anchor) => {
     const breakpoint = 920;
 
     if (currentWidth < breakpoint) {
-      menu.style.display = 'none';
-      main.style.display = 'block';
-      menuButtonSVG.setAttribute('src', './images/burger-closed.svg');
+      menuClose();
     }
 
     e.preventDefault();
@@ -46,14 +48,14 @@ menuItem.forEach((anchor) => {
 });
 
 function menuClose() {
-  menu.style.display = 'none';
-  main.style.display = 'block';
+  menu.classList.add('visually-hidden');
+  main.classList.remove('visually-hidden');
   menuButtonSVG.setAttribute('src', './images/burger-closed.svg');
 }
 
 function menuOpen() {
-  menu.style.display = 'block';
-  main.style.display = 'none';
+  menu.classList.remove('visually-hidden');
+  main.classList.add('visually-hidden');
   menuButtonSVG.setAttribute('src', './images/burger-opened.svg');
 }
 
