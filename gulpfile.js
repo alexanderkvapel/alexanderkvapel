@@ -71,9 +71,21 @@ function fonts() {
              .pipe(browserSync.reload({stream: true}));
 }
 
+function icons() {
+  return gulp.src('src/icons/**/*.{ico,svg,png}', {encoding: false})
+             .pipe(gulp.dest('dist/icons'))
+             .pipe(browserSync.reload({stream: true}));
+}
+
 function images() {
-  return gulp.src('src/images/**/*.{jpg,png,svg,gif,ico,webp,avif}', {encoding: false})
+  return gulp.src('src/images/**/*.{jpg,png,gif,ico,webp,avif}', {encoding: false})
              .pipe(gulp.dest('dist/images'))
+             .pipe(browserSync.reload({stream: true}));
+}
+
+function svg() {
+  return gulp.src('src/svg/**/*.svg', {encoding: false})
+             .pipe(gulp.dest('dist/svg'))
              .pipe(browserSync.reload({stream: true}));
 }
 
@@ -82,14 +94,16 @@ function clean() {
 }
 
 function watchFiles() {
-  gulp.watch(['src/**/*.js'], js);
+  gulp.watch(['src/scripts/**/*.js'], js);
   gulp.watch(['src/**/*.html'], html);
   gulp.watch(['src/blocks/**/*.css'], css);
   gulp.watch(['src/fonts/**/*.css'], fonts);
-  gulp.watch(['src/images/**/*.{jpg,png,svg,gif,ico,webp,avif}'], images);
+  gulp.watch(['src/icons/**/*.{ico,svg,png}'], icons);
+  gulp.watch(['src/images/**/*.{jpg,png,gif,ico,webp,avif}'], images);
+  gulp.watch(['src/svg/**/*.svg'], svg);
 }
 
-const build = gulp.series(clean, gulp.parallel(js, html, css, fonts, images));
+const build = gulp.series(clean, gulp.parallel(js, html, css, fonts, icons, images, svg));
 const watchapp = gulp.parallel(build, watchFiles, serve);
 
 exports.serve = serve;
@@ -98,7 +112,9 @@ exports.js = js;
 exports.html = html;
 exports.css = css;
 exports.fonts = fonts;
+exports.icons = icons;
 exports.images = images;
+exports.svg = svg;
 
 exports.build = build;
 exports.watchapp = watchapp;
