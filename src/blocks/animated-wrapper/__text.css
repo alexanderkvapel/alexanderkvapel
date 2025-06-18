@@ -1,14 +1,25 @@
 .animated-wrapper__text {
-  border-inline-end: 2px solid currentColor;
   overflow: hidden;
   color: var(--dark-accent-color, #1b6e6d);
   font-family: var(--font-monospace, 'JetBrains Mono'), monospace;
   font-weight: 400;
   font-size: var(--accent-text-fs, 24px);
-  line-height: 130%;
+  line-height: 100%;
   text-transform: uppercase;
-  max-inline-size: var(--animation-text-inline-size, 21.2ch);
+  max-inline-size: var(--animated-text-inline-size, 21.2ch);
   white-space: nowrap;
+}
+
+.animated-wrapper__animation--first {
+  --animated-text-inline-size: 21.2ch;
+}
+
+.animated-wrapper__animation--second {
+  --animated-text-inline-size: 12.2ch;
+}
+
+.animated-wrapper__animation--third {
+  --animated-text-inline-size: 19.2ch;
 }
 
 @keyframes typing {
@@ -32,23 +43,21 @@
 @media (prefers-reduced-motion: no-preference) {
 
   .animated-wrapper__text {
+    border-inline-end: 2px solid currentColor;
     animation: 
       typing 4s steps(var(--animation-steps, 21)) infinite, 
       blink 0.5s step-end infinite alternate;
   }
 
   .animated-wrapper__animation--first {
-    --animation-text-inline-size: 21.2ch;
     --animation-steps: 21;
   }
 
   .animated-wrapper__animation--second {
-    --animation-text-inline-size: 12.2ch;
     --animation-steps: 12;
   }
 
   .animated-wrapper__animation--third {
-    --animation-text-inline-size: 19.2ch;
     --animation-steps: 19;
   }
 }
