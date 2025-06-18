@@ -85,7 +85,7 @@ const textChanger = () => {
   setTimeout(() => {
     animatedText.classList.remove('animated-wrapper__animation--first');
     animatedText.classList.add('animated-wrapper__animation--second');
-    animatedText.textContent = 'Фиксер багов';
+    animatedText.textContent = 'Знаток MDN';
   }, 1 * animationDuration);
   setTimeout(() => {
     animatedText.classList.remove('animated-wrapper__animation--second');
