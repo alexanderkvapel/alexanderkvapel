@@ -71,7 +71,7 @@ function menuOpen() {
   sections.forEach((e) => {
     e.classList.add('visually-hidden');
   });
-  
+
   menuButtonSVG.setAttribute('src', './images/burger-opened.svg');
 }
 
@@ -80,17 +80,17 @@ const textChanger = () => {
   setTimeout(() => {
     animatedText.classList.remove('animated-wrapper__animation--third');
     animatedText.classList.add('animated-wrapper__animation--first');
-    animatedText.textContent = "Front End Разработчик";
+    animatedText.textContent = 'Front End Разработчик';
   }, 0 * animationDuration);
   setTimeout(() => {
     animatedText.classList.remove('animated-wrapper__animation--first');
     animatedText.classList.add('animated-wrapper__animation--second');
-    animatedText.textContent = "Фиксер багов";
+    animatedText.textContent = 'Фиксер багов';
   }, 1 * animationDuration);
   setTimeout(() => {
     animatedText.classList.remove('animated-wrapper__animation--second');
     animatedText.classList.add('animated-wrapper__animation--third');
-    animatedText.textContent = "Любитель JavaScript";
+    animatedText.textContent = 'Любитель JavaScript';
   }, 2 * animationDuration);
 }
 
