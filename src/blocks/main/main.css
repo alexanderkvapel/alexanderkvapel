@@ -1,5 +1,12 @@
 .main {
-  /* height: calc(100vh - var(--heading-block-size, 68px));
+  block-size: calc(100vh - var(--heading-block-size, 72px));
   overflow: auto;
-  scroll-snap-type: y mandatory; */
+  scroll-snap-type: y mandatory;
+}
+
+@media (width < 920px) {
+
+  .main {
+    block-size: calc(100dvh - var(--heading-block-size, 72px));
+  }
 }

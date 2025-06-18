@@ -1,11 +1,9 @@
 .menu-button {
   display: none;
   justify-self: end;
-  border: none;
-  background-color: transparent;
   cursor: pointer;
-  block-size: 28px;
-  inline-size: 28px;
+  block-size: var(--svg-logo-size, 32px);
+  inline-size: var(--svg-logo-size, 32px);
 }
 
 .menu-button img {

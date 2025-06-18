@@ -31,13 +31,6 @@
   outline-offset: 2px;
 }
 
-@media (width < 920px) {
-
-  :root {
-    --button-fs: 20px;
-  }
-}
-
 @media (prefers-reduced-motion: no-preference) {
   
   .button {

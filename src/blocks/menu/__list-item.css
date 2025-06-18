@@ -3,16 +3,9 @@
 }
 
 .menu__list-item:not(:last-child)::after {
-  content: '|';
-  margin-inline-start: var(--nav-gap, 20px);
-  font-weight: 300;
-  font-size: 20px;
-}
-
-.menu__list-item:last-child::after {
-  content: '|';
-  color: transparent;
-  font-size: 20px;
+  content: '';
+  margin-inline-start: var(--m-gap, 20px);
+  border-inline-end: 2px solid currentColor;
 }
 
 /* .menu__list-item::before {

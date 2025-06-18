@@ -1,7 +1,7 @@
 .menu__list {
   display: flex;
   align-items: center;
-  gap: var(--nav-gap, 20px);
+  gap: var(--m-gap, 20px);
   /* counter-reset: menu-index -1; */
 }
 
@@ -10,5 +10,6 @@
   .menu__list {
     flex-direction: column;
     align-items: start;
+    gap: var(--l-gap, 30px);
   }
 }

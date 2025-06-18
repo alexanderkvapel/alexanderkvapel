@@ -17,10 +17,3 @@
   outline: 1px solid var(--text-color, #c2c6dd);
   outline-offset: 2px;
 }
-
-@media (width < 920px) {
-
-  :root {
-    --menu-button-fs: 24px;
-  }
-}

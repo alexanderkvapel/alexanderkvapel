@@ -12,7 +12,7 @@
 
 textarea.form__textfield {
   resize: none;
-  block-size: calc(var(--textarea-rows, 5em) + 2 * var(--s-gap, 10px) + 2px);
+  block-size: calc(var(--textarea-rows, 4em) + 2 * var(--s-gap, 10px) + 2px);
 }
 
 .form__textfield:focus {
@@ -22,11 +22,4 @@ textarea.form__textfield {
 .form__textfield:focus-visible {
   border-color: var(--dark-accent-color, #1b6e6d);
   box-shadow: 4px 0 16px 0 var(--dark-accent-color, #1b6e6d);
-}
-
-@media (width < 920px) {
-  
-  :root {
-    --textarea-rows: 3em;
-  }
 }

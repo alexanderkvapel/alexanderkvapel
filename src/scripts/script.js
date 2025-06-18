@@ -3,7 +3,10 @@ const menuButtonSVG = document.querySelector('.menu-button img');
 const menu = document.querySelector('.menu');
 const menuItem = document.querySelectorAll('button[data-scroll-to^="#"]');
 const main = document.querySelector('.main');
+const sections = document.querySelectorAll('.section');
 const animatedText = document.querySelector('.animated-wrapper__text');
+
+let currentScrollTop = 0;
 
 menuButton.addEventListener('click', function () {
   if (menu.classList.contains('visually-hidden')) {
@@ -23,7 +26,10 @@ window.addEventListener('resize', function () {
 
   if (currentWidth >= breakpoint) {
     menu.classList.remove('visually-hidden');
-    main.classList.remove('visually-hidden');
+    sections.forEach((e) => {
+      e.classList.remove('visually-hidden');
+    });
+    
     menuButtonSVG.setAttribute('src', './images/burger-closed.svg');
   } else if (currentWidth < breakpoint) {
     menuClose();
@@ -49,13 +55,23 @@ menuItem.forEach((anchor) => {
 
 function menuClose() {
   menu.classList.add('visually-hidden');
-  main.classList.remove('visually-hidden');
+  sections.forEach((e) => {
+    e.classList.remove('visually-hidden');
+  });
+
   menuButtonSVG.setAttribute('src', './images/burger-closed.svg');
+
+  main.scrollTo(0, currentScrollTop);
 }
 
 function menuOpen() {
+  currentScrollTop = main.scrollTop || 0;
+
   menu.classList.remove('visually-hidden');
-  main.classList.add('visually-hidden');
+  sections.forEach((e) => {
+    e.classList.add('visually-hidden');
+  });
+  
   menuButtonSVG.setAttribute('src', './images/burger-opened.svg');
 }
 

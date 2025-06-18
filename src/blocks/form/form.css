@@ -3,3 +3,10 @@
   flex-direction: column;
   gap: var(--s-gap, 10px);
 }
+
+@media (width < 530px) {
+  
+  .form {
+    gap: var(--xs-gap, 5px);
+  }
+}
