@@ -51,6 +51,7 @@
 @media (width < 530px) {
 
   :root {
-    --section-min-block-size: 597px;
+    --section-min-block-size: 575px;
+    --svg-logo-size: 24px;
   }
 }

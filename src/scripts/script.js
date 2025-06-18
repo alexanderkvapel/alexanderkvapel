@@ -1,5 +1,4 @@
 const menuButton = document.querySelector('.menu-button');
-const menuButtonSVG = document.querySelector('.menu-button img');
 const menu = document.querySelector('.menu');
 const menuItem = document.querySelectorAll('button[data-scroll-to^="#"]');
 const main = document.querySelector('.main');
@@ -30,7 +29,7 @@ window.addEventListener('resize', function () {
       e.classList.remove('visually-hidden');
     });
     
-    menuButtonSVG.setAttribute('src', './images/burger-closed.svg');
+    menuButton.classList.remove('open');
   } else if (currentWidth < breakpoint) {
     menuClose();
   }
@@ -59,7 +58,7 @@ function menuClose() {
     e.classList.remove('visually-hidden');
   });
 
-  menuButtonSVG.setAttribute('src', './images/burger-closed.svg');
+  menuButton.classList.remove('menu-button--open');
 
   main.scrollTo(0, currentScrollTop);
 }
@@ -72,7 +71,7 @@ function menuOpen() {
     e.classList.add('visually-hidden');
   });
 
-  menuButtonSVG.setAttribute('src', './images/burger-opened.svg');
+  menuButton.classList.add('menu-button--open');
 }
 
 const animationDuration = 4000;

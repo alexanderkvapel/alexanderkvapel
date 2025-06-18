@@ -23,3 +23,10 @@ textarea.form__textfield {
   border-color: var(--dark-accent-color, #1b6e6d);
   box-shadow: 4px 0 16px 0 var(--dark-accent-color, #1b6e6d);
 }
+
+@media (width < 530px) {
+  
+  .form__textfield {
+    padding: 7px;
+  }
+}
