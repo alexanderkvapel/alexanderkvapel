@@ -1,0 +1,39 @@
+.link {
+  display: inline-block;
+}
+
+.link:hover {
+  color: var(--dark-accent-color, #1b6e6d);
+}
+
+.link::after {
+  content: '';
+  display: block;
+  inline-size: 0;
+  block-size: 1px;
+  background-color: currentColor;
+  margin-block-start: -3px;
+}
+
+.link:hover::after {
+  inline-size: 100%;
+}
+
+.link:focus {
+  outline: none;
+}
+
+.link:focus-visible {
+  outline: 1px solid var(--text-color, #c2c6dd);
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .link {
+    transition: color .3s;
+  }
+
+  .link::after {
+    transition: width .5s, background-color .3s;
+  }
+}

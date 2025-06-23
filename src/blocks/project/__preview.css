@@ -17,7 +17,7 @@
 
 @media (prefers-reduced-motion: no-preference) {
 
-  .project__preview {
+  .project__preview img {
     transition: border-color .3s;
   }
 }

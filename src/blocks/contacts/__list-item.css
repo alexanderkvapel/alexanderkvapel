@@ -14,9 +14,12 @@
   gap: var(--s-gap, 10px);
 }
 
-.contacts__list-item a:focus {
-  outline: none;
-}
+.contacts__list-item:hover .link {
+    color: var(--dark-accent-color, #1b6e6d);
+  }
+  .contacts__list-item:hover .link::after {
+    inline-size: 100%;
+  }
 
 .contacts__list-item a:focus-visible {
   outline: 1px solid var(--text-color, #c2c6dd);
