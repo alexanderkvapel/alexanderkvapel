@@ -15,7 +15,7 @@ function serve() {
     server: {
       baseDir: './dist'
     },
-    listen: '192.168.20.110',
+    listen: '192.168.20.111',
     port: 3000,
     ui: {
       port: 3001

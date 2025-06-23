@@ -30,3 +30,10 @@ textarea.form__textfield {
     padding: 7px;
   }
 }
+
+@media (prefers-reduced-motion: no-preference) {
+
+  .form__textfield {
+    transition: border-color .3s, box-shadow .3s;
+  }
+}
