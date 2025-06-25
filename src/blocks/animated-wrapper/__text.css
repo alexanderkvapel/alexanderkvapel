@@ -47,6 +47,7 @@
     animation: 
       typing 4s steps(var(--animation-steps, 21)) infinite, 
       blink 0.5s step-end infinite alternate;
+    will-change: inline-size;
   }
 
   .animated-wrapper__animation--first {
