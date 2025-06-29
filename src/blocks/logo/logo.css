@@ -9,7 +9,7 @@
   line-height: 24px;
   text-align: center;
   text-transform: uppercase;
-  cursor: default;
+  cursor: pointer;
 }
 
 @media (width < 920px) {

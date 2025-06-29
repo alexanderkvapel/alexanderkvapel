@@ -1,6 +1,7 @@
 .skills__list-item {
   display: flex;
   gap: var(--s-gap, 10px);
+  align-items: center;
 }
 
 .skills__list-item img {
@@ -10,4 +11,23 @@
 
 .skills__list-item p {
   cursor: default;
+}
+
+.skills__list-item:hover {
+  scale: 1.2;
+}
+
+.skills__list-item:hover img {
+  rotate: 360deg;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+
+  .skills__list-item {
+    transition: scale 0.6s;
+  }
+
+  .skills__list-item img {
+    transition: rotate 0.6s;
+  }
 }

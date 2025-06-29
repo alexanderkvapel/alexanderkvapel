@@ -17,11 +17,23 @@
 .contacts__list-item:hover .link {
     color: var(--dark-accent-color, #1b6e6d);
   }
-  .contacts__list-item:hover .link::after {
-    inline-size: 100%;
-  }
+
+.contacts__list-item:hover .link::after {
+  inline-size: 100%;
+}
+
+.contacts__list-item:hover img {
+  rotate: 360deg;
+}
 
 .contacts__list-item a:focus-visible {
   outline: 1px solid var(--text-color, #c2c6dd);
   outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  
+  .contacts__list-item img {
+    transition: rotate 0.6s;
+  }
 }

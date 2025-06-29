@@ -1,23 +1,35 @@
 .project__preview {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid transparent;
+  border-radius: 10px;
+  overflow: hidden;
   inline-size: 100%;
 }
 
 .project__preview img {
-  border: 3px solid transparent;
-  border-radius: 10px;
   object-fit: cover;
   object-position: center;
   inline-size: 100%;
   block-size: 100%;
 }
 
-.project__preview img:hover {
+.project__preview:hover {
   border-color: var(--dark-accent-color);
+}
+
+.project__preview img:hover {
+  scale: 1.05;
 }
 
 @media (prefers-reduced-motion: no-preference) {
 
-  .project__preview img {
+  .project__preview {
     transition: border-color .3s;
+  }
+
+  .project__preview img {
+    transition: scale .6s;
   }
 }

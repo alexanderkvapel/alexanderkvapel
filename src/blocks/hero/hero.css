@@ -1,0 +1,55 @@
+@property --variable {
+  syntax: '<percentage>';
+  inherits: false;
+  initial-value: 17%;
+}
+
+@property --variable-two {
+  syntax: '<percentage>';
+  inherits: false;
+  initial-value: 31%;
+}
+
+.hero {
+  background-image: radial-gradient(circle, var(--light-accent-color) 0, var(--dark-accent-color) var(--variable), var(--bg-color) var(--variable-two) 100%);
+  background-position: 90% 50%;
+  background-size: 50%;
+  background-repeat: no-repeat;
+  animation: scale 3.5s infinite linear alternate,
+             move 45s infinite linear;
+}
+
+@keyframes scale {
+  from {
+    --variable-two: 31%;
+    --variable: 17% 
+  }
+  to {
+    --variable-two: 36%;
+    --variable: 24%
+  }
+}
+
+@keyframes move {
+  0%   { background-position: 90% 50%; }
+  5%   { background-position: 88% 52%; }
+  10%  { background-position: 92% 48%; }
+  15%  { background-position: 90% 50%; }
+  20%  { background-position: 89% 51%; }
+  25%  { background-position: 91% 49%; }
+  30%  { background-position: 88% 52%; }
+  35%  { background-position: 92% 48%; }
+  40%  { background-position: 90% 50%; }
+  45%  { background-position: 89% 51%; }
+  50%  { background-position: 91% 49%; }
+  55%  { background-position: 88% 52%; }
+  60%  { background-position: 92% 48%; }
+  65%  { background-position: 90% 50%; }
+  70%  { background-position: 89% 51%; }
+  75%  { background-position: 91% 49%; }
+  80%  { background-position: 88% 52%; }
+  85%  { background-position: 92% 48%; }
+  90%  { background-position: 90% 50%; }
+  95%  { background-position: 89% 51%; }
+  100% { background-position: 90% 50%; }
+}

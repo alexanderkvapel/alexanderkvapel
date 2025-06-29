@@ -1,3 +1,4 @@
+const logo = document.querySelectorAll('.logo');
 const menuButton = document.querySelector('.menu-button');
 const menu = document.querySelector('.menu');
 const menuItem = document.querySelectorAll('button[data-scroll-to^="#"]');
@@ -6,6 +7,14 @@ const sections = document.querySelectorAll('.section');
 const animatedText = document.querySelector('.animated-wrapper__text');
 
 let currentScrollTop = 0;
+
+logo.forEach((anchor) => {
+  anchor.addEventListener('click', function () {
+    document.querySelector('.hero').scrollIntoView({
+      behavior: 'smooth',
+    });
+  })
+})
 
 menuButton.addEventListener('click', function () {
   if (menu.classList.contains('visually-hidden')) {
