@@ -9,7 +9,16 @@ const animatedText = document.querySelector('.animated-wrapper__text');
 let currentScrollTop = 0;
 
 logo.forEach((anchor) => {
-  anchor.addEventListener('click', function () {
+  anchor.addEventListener('click', function (e) {
+    const currentWidth = window.innerWidth;
+    const breakpoint = 920;
+
+    if (currentWidth < breakpoint) {
+      menuClose();
+    }
+
+    e.preventDefault();
+
     document.querySelector('.hero').scrollIntoView({
       behavior: 'smooth',
     });
