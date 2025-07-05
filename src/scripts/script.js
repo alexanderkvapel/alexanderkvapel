@@ -5,6 +5,7 @@ const menuItem = document.querySelectorAll('button[data-scroll-to^="#"]');
 const main = document.querySelector('.main');
 const sections = document.querySelectorAll('.section');
 const animatedText = document.querySelector('.animated-wrapper__text');
+const form = document.querySelector('.form');
 
 let currentScrollTop = 0;
 
@@ -113,3 +114,10 @@ const textChanger = () => {
 
 textChanger();
 setInterval(textChanger, 3 * animationDuration);
+
+form.addEventListener('submit', function (e) {
+  setTimeout(() => {
+
+  form.reset();
+  }, 1000);
+});

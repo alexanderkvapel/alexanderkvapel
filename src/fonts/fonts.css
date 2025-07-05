@@ -1,6 +1,7 @@
 @font-face {
   font-family: 'Roboto';
   src:
+    local('Roboto-Regular'),
     url(./Roboto-Regular.woff2) format('woff2'),
     url(./Roboto-Regular.ttf) format('truetype');
   font-weight: 400;
@@ -10,6 +11,7 @@
 @font-face {
   font-family: 'Roboto';
   src:
+    local('Roboto-Medium'),
     url(./Roboto-Medium.woff2) format('woff2'),
     url(./Roboto-Medium.ttf) format('truetype');
   font-weight: 500;
@@ -19,6 +21,7 @@
 @font-face {
   font-family: 'Roboto';
   src:
+    local('Roboto-Bold'),
     url(./Roboto-Bold.woff2) format('woff2'),
     url(./Roboto-Bold.ttf) format('truetype');
   font-weight: 700;
@@ -28,6 +31,7 @@
 @font-face {
   font-family: 'JetBrains Mono';
   src: 
+    local('JetBrainsMono-Regular'),
     url(./JetBrainsMono-Regular.woff2) format('woff2'),
     url(./JetBrainsMono-Regular.ttf) format('truetype');
   font-weight: 400;
@@ -37,6 +41,7 @@
 @font-face {
   font-family: 'JetBrains Mono';
   src: 
+    local('JetBrainsMono-Medium'),
     url(./JetBrainsMono-Medium.ttf) format('woff2'),
     url(./JetBrainsMono-Medium.ttf) format('truetype');
   font-weight: 500;
