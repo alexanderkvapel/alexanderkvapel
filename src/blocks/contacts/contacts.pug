@@ -1,0 +1,32 @@
+-
+  var contactsData = [
+    {
+      'href': 'https://github.com/alexanderkvapel',
+      'src': './svg/github.svg',
+      'alt': 'Ссылка на Github.',
+      'text': 'alexanderkvapel'
+    },
+    {
+      'href': 'https://t.me/alexanderkvapel',
+      'src': './svg/telegram.svg',
+      'alt': 'Ссылка на Telegram.',
+      'text': 'alexanderkvapel'
+    },
+    {
+      'href': 'mailto:alexanderkvapel@outlook.com',
+      'src': './svg/email.svg',
+      'alt': 'Ссылка на почту.',
+      'text': 'alexanderkvapel@outlook.com'
+    }
+  ]
+
+mixin contacts(withText)
+  nav.contacts
+    ul.contacts__list
+      include __list-item.pug
+      if withText == false
+        each contact in contactsData
+          +contacts__list-item(contact.href, contact.src, contact.alt)
+      else if withText == true
+        each contact in contactsData
+          +contacts__list-item(contact.href, contact.src, contact.alt, contact.text)

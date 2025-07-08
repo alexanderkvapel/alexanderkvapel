@@ -1,0 +1,15 @@
+extends ../section/section.pug
+
+block variables
+  - var sectionName = 'hero'
+
+block section-content
+  h1.title--main Александр
+  article.article
+    div.animated-wrapper
+      p.animated-wrapper__text Front End Разработчик
+    p.text.
+      Эксперт в использовании best&#8209;practice и нахождении лучших решений на StackOverflow.
+  .button-wrapper
+    button.button.button--filled(type="button" data-scroll-to=".contact") Связаться
+    button.button.button--bordered(type="button" data-scroll-to=".about") Узнать больше →

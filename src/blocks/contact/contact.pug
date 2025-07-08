@@ -1,0 +1,17 @@
+extends ../section/section.pug
+
+block variables
+  - var sectionName = 'contact'
+  - var sectionTitle = 'Контакты'
+
+block section-content
+  .structure-wrapper__item
+    article.article 
+      h3.title--sub Хотите реализовать проект?
+      p.text.
+        Заполните форму, и я свяжусь с вами для обсуждения проекта.
+  .structure-wrapper__item
+    include ../form/form.pug
+  .structure-wrapper__item
+    include ../contacts/contacts.pug
+    +contacts(true)

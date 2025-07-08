@@ -1,0 +1,35 @@
+extends ../section/section.pug
+
+block variables
+  - var sectionName = 'skills'
+  - var sectionTitle = 'Скиллы'
+  - 
+    var skillsData = [
+      {
+        'src': './images/logo-html.png',
+        'alt': 'HTML'
+      },
+      {
+        'src': './images/logo-css.png',
+        'alt': 'CSS'
+      },
+      {
+        'src': './images/logo-js.png',
+        'alt': 'JavaScript'
+      },
+      
+      {
+        'src': './images/logo-react.png',
+        'alt': 'React'
+      }
+    ]
+
+block section-content
+  .structure-wrapper__item
+    p.text.
+      Трудности меня мотивируют и помогают находить пути совершенствования и освоения навыков. Я легко усваиваю новые технологии и адаптируюсь к ним на практике.
+  .structure-wrapper__item
+    ul.skills__list
+      include __list-item.pug
+      each skill in skillsData
+        +skills__list-item(skill.src, skill.alt)

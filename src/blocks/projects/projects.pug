@@ -1,0 +1,35 @@
+extends ../section/section.pug
+
+block variables
+  - var sectionName = 'projects'
+  - var sectionTitle = 'Проекты'
+  - 
+    var projectsData = [
+      {
+        'href': 'https://alexanderkvapel.github.io/zakrivayuschiy-teg-f/',
+        'src': './images/project-zakrivayushi-tag.jpg',
+        'alt': 'Превью проекта Закрывающий тег.',
+        'title': 'Закрывающий тег',
+        'description': 'Воспоминания о модуле верстки'
+      },
+      {
+        'href': 'https://alexanderkvapel.github.io/slozhno-sosredotochitsya-fd/',
+        'src': './images/project-slozhno-sosredotochitsya.jpg',
+        'alt': 'Превью проекта Сложно сосредоточиться.',
+        'title': 'Сложно сосредоточиться',
+        'description': 'Сайт про то, что делать, когда не можешь делать ничего'
+      },
+      {
+        'href': 'https://alexanderkvapel.github.io/posmotri-v-okno-fd/',
+        'src': './images/project-posmotri-v-okno.jpg',
+        'alt': 'Превью проекта Посмотри В Окно.',
+        'title': 'Посмотри В Окно',
+        'description': 'Веб-приложение для просмотра лайв-видео'
+      }
+    ]
+
+block section-content 
+  ul.projects__list.scrollbar
+    include ../project/project.pug
+    each project in projectsData
+      +project(project.href, project.src, project.alt, project.title, project.description)

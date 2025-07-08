@@ -1,0 +1,25 @@
+-
+  var menuData = [
+    {
+      'sectionName': '.about',
+      'text': 'Обо мне'
+    },
+    {
+      'sectionName': '.skills',
+      'text': 'Скиллы'
+    },
+    {
+      'sectionName': '.projects',
+      'text': 'Проекты'
+    }, 
+    {
+      'sectionName': '.contact',
+      'text': 'Контакты'
+    }
+  ]
+
+nav.menu
+  ul.menu__list
+    include __list-item.pug
+    each item in menuData
+      +menu__list-item(item.sectionName, item.text)

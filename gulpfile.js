@@ -9,6 +9,7 @@ const autoprefixer = require('autoprefixer');
 const mediaquery = require('postcss-combine-media-query');
 const cssnano = require('cssnano');
 const htmlMinify = require('html-minifier');
+const gulppug = require('gulp-pug');
 
 function serve() {
   browserSync.init({
@@ -51,6 +52,13 @@ function html() {
              .pipe(browserSync.reload({stream: true}));
 }
 
+function pug() {
+  return gulp.src('src/pages/**/*.pug')
+        .pipe(gulppug())
+        .pipe(gulp.dest('dist/'))
+        .pipe(browserSync.reload({stream: true}));
+}
+
 function css() {
   const plugins = [
     autoprefixer(),
@@ -66,7 +74,7 @@ function css() {
 }
 
 function fonts() {
-  return gulp.src('src/fonts/**/*.{css,woff2,woff,ttf}')
+  return gulp.src('src/fonts/**/*.{woff2,woff,ttf}')
              .pipe(gulp.dest('dist/fonts'))
              .pipe(browserSync.reload({stream: true}));
 }
@@ -88,28 +96,28 @@ function svg() {
              .pipe(gulp.dest('dist/svg'))
              .pipe(browserSync.reload({stream: true}));
 }
-
 function clean() {
   return del('dist');
 }
 
 function watchFiles() {
   gulp.watch(['src/scripts/**/*.js'], js);
-  gulp.watch(['src/**/*.html'], html);
-  gulp.watch(['src/blocks/**/*.css'], css);
-  gulp.watch(['src/fonts/**/*.css'], fonts);
+  gulp.watch(['src/**/*.pug'], pug);
+  gulp.watch(['src/**/*.css'], css);
+  gulp.watch(['src/fonts/**/*.{css,woff2,woff,ttf}'], fonts);
   gulp.watch(['src/icons/**/*.{ico,svg,png}'], icons);
   gulp.watch(['src/images/**/*.{jpg,png,gif,ico,webp,avif}'], images);
   gulp.watch(['src/svg/**/*.svg'], svg);
 }
 
-const build = gulp.series(clean, gulp.parallel(js, html, css, fonts, icons, images, svg));
+const build = gulp.series(clean, gulp.parallel(pug, js, css, fonts, icons, images, svg));
 const watchapp = gulp.parallel(build, watchFiles, serve);
 
 exports.serve = serve;
 exports.clean = clean;
 exports.js = js;
 exports.html = html;
+exports.pug = pug;
 exports.css = css;
 exports.fonts = fonts;
 exports.icons = icons;

@@ -1,0 +1,15 @@
+block variables
+
+section.section(class=sectionName)
+  .content-wrapper
+    if sectionName == 'hero'
+      .structure-wrapper
+        block section-content
+    else
+      h2.title= sectionTitle
+      article.article-section
+        if sectionName == 'projects'
+            block section-content
+        else
+          .structure-wrapper
+            block section-content
