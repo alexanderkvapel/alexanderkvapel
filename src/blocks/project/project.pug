@@ -1,8 +1,8 @@
 mixin project(href, src, alt, title, description)
   li.projects__list-item
-    a(href=href, target="_blank")
+    a(href=href, target='_blank')
       article.project
         .project__preview
-          img(src=src, alt=alt, loading="lazy")
+          img(src=src, alt=alt, loading='lazy')
         h3.project__title= title
         p.project__description= description

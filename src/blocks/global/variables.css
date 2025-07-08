@@ -37,7 +37,6 @@
 }
 
 @media (width < 920px) {
-
   :root {
     --button-fs: 20px;
     --menu-button-fs: 24px;
@@ -49,7 +48,6 @@
 }
 
 @media (width < 530px) {
-
   :root {
     --section-min-block-size: 575px;
     --svg-logo-size: 24px;

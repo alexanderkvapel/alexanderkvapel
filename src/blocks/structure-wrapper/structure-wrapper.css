@@ -12,7 +12,6 @@
 }
 
 @media (width < 920px) {
-  
   .structure-wrapper {
     grid-template-columns: 1fr;
   }

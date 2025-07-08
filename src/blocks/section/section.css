@@ -4,5 +4,7 @@
   align-items: center;
   scroll-snap-align: start;
   min-block-size: var(--section-min-block-size, 578px);
-  block-size: calc(var(--section-block-size, 100vh) - var(--header-block-size, 72px));
+  block-size: calc(
+    var(--section-block-size, 100vh) - var(--header-block-size, 72px)
+  );
 }

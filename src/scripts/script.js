@@ -23,8 +23,8 @@ logo.forEach((anchor) => {
     document.querySelector('.hero').scrollIntoView({
       behavior: 'smooth',
     });
-  })
-})
+  });
+});
 
 menuButton.addEventListener('click', function () {
   if (menu.classList.contains('visually-hidden')) {
@@ -47,7 +47,7 @@ window.addEventListener('resize', function () {
     sections.forEach((e) => {
       e.classList.remove('visually-hidden');
     });
-    
+
     menuButton.classList.remove('open');
   } else if (currentWidth < breakpoint) {
     menuClose();
@@ -110,14 +110,13 @@ const textChanger = () => {
     animatedText.classList.add('animated-wrapper__animation--third');
     animatedText.textContent = 'Любитель JavaScript';
   }, 2 * animationDuration);
-}
+};
 
 textChanger();
 setInterval(textChanger, 3 * animationDuration);
 
 form.addEventListener('submit', function (e) {
   setTimeout(() => {
-
-  form.reset();
+    form.reset();
   }, 1000);
 });

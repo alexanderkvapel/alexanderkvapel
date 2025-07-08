@@ -27,17 +27,17 @@
   border-radius: 4px 0 0 4px;
 }
 
-.menu-button span:nth-child(1), 
+.menu-button span:nth-child(1),
 .menu-button span:nth-child(2) {
   inset-block-start: 0px;
 }
 
-.menu-button span:nth-child(3), 
+.menu-button span:nth-child(3),
 .menu-button span:nth-child(4) {
   inset-block-start: 10px;
 }
 
-.menu-button span:nth-child(5), 
+.menu-button span:nth-child(5),
 .menu-button span:nth-child(6) {
   inset-block-start: 20px;
 }
@@ -82,7 +82,6 @@
   inset-inline-start: calc(50% - 3px);
 }
 
-
 /* .menu-button:focus {
   outline: none;
 }
@@ -93,15 +92,13 @@
 } */
 
 @media (width < 920px) {
-  
   .menu-button {
     display: block;
   }
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  
   .menu-button span {
-    transition: .25s ease-in-out;
+    transition: 0.25s ease-in-out;
   }
 }

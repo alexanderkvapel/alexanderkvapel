@@ -1,9 +1,9 @@
 extends ../section/section.pug
 
 block variables
-  - var sectionName = 'projects'
-  - var sectionTitle = 'Проекты'
-  - 
+  - var sectionName = 'projects';
+  - var sectionTitle = 'Проекты';
+  -
     var projectsData = [
       {
         'href': 'https://alexanderkvapel.github.io/zakrivayuschiy-teg-f/',
@@ -28,7 +28,7 @@ block variables
       }
     ]
 
-block section-content 
+block section-content
   ul.projects__list.scrollbar
     include ../project/project.pug
     each project in projectsData

@@ -7,7 +7,6 @@
 }
 
 @media (width < 920px) {
-  
   .projects__list {
     grid-template-columns: repeat(3, calc(100%));
     scroll-snap-type: x mandatory;

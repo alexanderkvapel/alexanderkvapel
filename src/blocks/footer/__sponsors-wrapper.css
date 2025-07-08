@@ -8,7 +8,6 @@
 }
 
 @media (width < 920px) {
-  
   .footer__sponsors-wrapper {
     grid-row: 2;
     justify-self: inherit;
@@ -16,7 +15,6 @@
 }
 
 @media (width < 530px) {
-  
   .footer__sponsors-wrapper {
     grid-row: 3 !important;
   }

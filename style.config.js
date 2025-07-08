@@ -1,5 +1,6 @@
 module.exports = {
-  rules: {
+  "extends": "stylelint-config-standard-scss",
+  "rules" : {
     'color-no-invalid-hex': true,
     'value-keyword-case': ['lower', { camelCaseSvgKeywords: true }],
     'property-no-unknown': true,
@@ -26,4 +27,4 @@ module.exports = {
     'selector-class-pattern': null,
     'font-family-name-quotes': 'always-where-recommended',
   },
-};
+} 

@@ -5,7 +5,6 @@
 }
 
 @media (width < 920px) {
-
   .main {
     block-size: calc(100dvh - var(--heading-block-size, 72px));
   }

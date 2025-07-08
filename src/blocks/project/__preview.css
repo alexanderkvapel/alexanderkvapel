@@ -25,12 +25,11 @@
 }
 
 @media (prefers-reduced-motion: no-preference) {
-
   .project__preview {
-    transition: border-color .3s;
+    transition: border-color 0.3s;
   }
 
   .project__preview img {
-    transition: scale .6s;
+    transition: scale 0.6s;
   }
 }

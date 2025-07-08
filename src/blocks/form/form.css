@@ -5,7 +5,6 @@
 }
 
 @media (width < 530px) {
-  
   .form {
     gap: var(--xs-gap, 5px);
   }

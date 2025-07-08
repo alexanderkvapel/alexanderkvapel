@@ -8,7 +8,6 @@
 }
 
 @media (width < 920px) {
-  
   .structure-wrapper__item {
     inline-size: 100%;
   }

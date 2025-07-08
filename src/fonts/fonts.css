@@ -30,7 +30,7 @@
 
 @font-face {
   font-family: 'JetBrains Mono';
-  src: 
+  src:
     local('JetBrainsMono-Regular'),
     url(./JetBrainsMono-Regular.woff2) format('woff2'),
     url(./JetBrainsMono-Regular.ttf) format('truetype');
@@ -40,7 +40,7 @@
 
 @font-face {
   font-family: 'JetBrains Mono';
-  src: 
+  src:
     local('JetBrainsMono-Medium'),
     url(./JetBrainsMono-Medium.ttf) format('woff2'),
     url(./JetBrainsMono-Medium.ttf) format('truetype');

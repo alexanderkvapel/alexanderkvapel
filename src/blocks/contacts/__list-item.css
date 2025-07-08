@@ -15,8 +15,8 @@
 }
 
 .contacts__list-item:hover .link {
-    color: var(--dark-accent-color, #1b6e6d);
-  }
+  color: var(--dark-accent-color, #1b6e6d);
+}
 
 .contacts__list-item:hover .link::after {
   inline-size: 100%;
@@ -32,7 +32,6 @@
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  
   .contacts__list-item img {
     transition: rotate 0.6s ease-in-out;
   }

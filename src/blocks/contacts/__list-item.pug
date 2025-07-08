@@ -1,6 +1,6 @@
 mixin contacts__list-item(href, src, alt, text)
   li.contacts__list-item
-    a(href=href, target="_blank")
-      img(src=src, loading="lazy", alt=alt)
+    a(href=href, target='_blank')
+      img(src=src, loading='lazy', alt=alt)
       if withText == true
         p.text.link= text

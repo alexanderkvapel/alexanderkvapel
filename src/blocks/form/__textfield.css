@@ -25,15 +25,15 @@ textarea.form__textfield {
 }
 
 @media (width < 530px) {
-  
   .form__textfield {
     padding: 7px;
   }
 }
 
 @media (prefers-reduced-motion: no-preference) {
-
   .form__textfield {
-    transition: border-color .3s, box-shadow .3s;
+    transition:
+      border-color 0.3s,
+      box-shadow 0.3s;
   }
 }

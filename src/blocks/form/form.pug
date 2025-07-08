@@ -1,4 +1,4 @@
-- 
+-
   var formData = [
     {
       'type': 'email',
@@ -17,9 +17,13 @@
     }
   ]   
 
-form.form(action="https://api.web3forms.com/submit" method="POST")
-  input(type="hidden" name="access_key" value="844b0d6a-a409-4705-9d2c-ef3f2f96bfdb")
+form.form(action='https://api.web3forms.com/submit', method='POST')
+  input(
+    type='hidden',
+    name='access_key',
+    value='844b0d6a-a409-4705-9d2c-ef3f2f96bfdb'
+  )
   include __textfield.pug
   each item in formData
     +form__textfield(item.type, item.name, item.label)
-  button.button.button--filled(type="submit") Отправить
+  button.button.button--filled(type='submit') Отправить

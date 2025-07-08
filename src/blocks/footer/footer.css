@@ -22,7 +22,6 @@
 }
 
 @media (width < 920px) {
-  
   .footer > .content-wrapper {
     grid-template-columns: min-content 1fr;
     justify-items: center;
@@ -31,7 +30,6 @@
 }
 
 @media (width < 530px) {
-  
   .footer > .content-wrapper {
     grid-template-columns: 1fr !important;
   }

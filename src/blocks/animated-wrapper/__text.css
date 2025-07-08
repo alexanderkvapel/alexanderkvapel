@@ -26,7 +26,8 @@
   0% {
     inline-size: 0;
   }
-  50%, 75% {
+  50%,
+  75% {
     inline-size: var(--animated-text-inline-size, 21.2ch);
   }
   100% {
@@ -41,11 +42,10 @@
 }
 
 @media (prefers-reduced-motion: no-preference) {
-
   .animated-wrapper__text {
     border-inline-end: 2px solid currentColor;
-    animation: 
-      typing 4s steps(var(--animation-steps, 21)) infinite, 
+    animation:
+      typing 4s steps(var(--animation-steps, 21)) infinite,
       blink 0.5s step-end infinite alternate;
     will-change: inline-size;
   }

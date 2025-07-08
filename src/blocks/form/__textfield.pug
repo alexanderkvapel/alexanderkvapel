@@ -2,8 +2,8 @@ mixin form__textfield(type, name, label)
   if type == 'textarea'
     label.form__label
       span.form__label-text= label
-      textarea.form__textfield(name=name required)
-  else 
+      textarea.form__textfield(name=name, required)
+  else
     label.form__label
       span.form__label-text= label
-      input.form__textfield(type=type name=name required)
+      input.form__textfield(type=type, name=name, required)

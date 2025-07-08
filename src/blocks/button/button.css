@@ -32,8 +32,7 @@
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  
   .button {
-    transition: box-shadow .3s;
+    transition: box-shadow 0.3s;
   }
 }

@@ -15,15 +15,13 @@
 } */
 
 @media (width < 920px) {
-
   .menu__list-item::after {
     display: none;
   }
 }
 
 @media (prefers-reduced-motion: no-preference) {
-
   .menu__list-item button {
-    transition: color .3s;
+    transition: color 0.3s;
   }
 }

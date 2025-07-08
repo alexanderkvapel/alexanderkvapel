@@ -8,7 +8,6 @@
 }
 
 @media (width < 920px) {
-  
   .footer .contacts__list {
     gap: var(--m-gap, 20px);
   }
