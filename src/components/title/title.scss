@@ -1,0 +1,25 @@
+.title {
+  color: var(--light-accent-color, #d5b87c);
+  font-family: var(--font-monospace, 'JetBrains Mono'), monospace;
+  font-weight: 500;
+  font-size: var(--title-fs, 32px);
+  line-height: 1;
+  text-transform: uppercase;
+
+  &--main {
+    color: var(--light-accent-color, #d5b87c);
+    font-family: inherit;
+    font-weight: 500;
+    font-size: var(--h1-fs, 64px);
+    line-height: 1;
+    text-transform: capitalize;
+    text-shadow: 2px 0 12px var(--light-accent-color, #d5b87c);
+  }
+
+  &--sub {
+    color: var(--light-accent-color, #d5b87c);
+    font-weight: 500;
+    font-size: var(--subtitle-fs, 21px);
+    line-height: 1;
+  }
+}

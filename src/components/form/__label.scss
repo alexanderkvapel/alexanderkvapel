@@ -1,0 +1,10 @@
+.form__label {
+  display: flex;
+  flex-direction: column;
+  gap: var(--xs-gap, 5px);
+
+  &-text {
+    font-size: var(--text-fs, 16px);
+    line-height: 100%;
+  }
+}

@@ -1,8 +1,0 @@
-.title {
-  color: var(--light-accent-color, #d5b87c);
-  font-family: var(--font-monospace, 'JetBrains Mono'), monospace;
-  font-weight: 500;
-  font-size: var(--title-fs, 32px);
-  line-height: 100%;
-  text-transform: uppercase;
-}

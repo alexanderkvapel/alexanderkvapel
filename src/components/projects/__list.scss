@@ -1,0 +1,33 @@
+.projects__list {
+  display: grid;
+  grid-template-columns: repeat(3, calc(50% - 10px));
+  gap: var(--m-gap, 20px);
+  padding: var(--xs-gap, 5px);
+  overflow-x: auto;
+
+  &-item {
+    a {
+      &:focus {
+        outline: none;
+      }
+
+      &:focus-visible {
+        .project {
+          outline: 1px solid var(--text-color, #c2c6dd);
+          outline-offset: 2px;
+        }
+      }
+    }
+  }
+}
+
+@media (width < $breakpoint-tablet) {
+  .projects__list {
+    grid-template-columns: repeat(3, calc(100%));
+    scroll-snap-type: x mandatory;
+
+    &-item {
+      scroll-snap-align: center;
+    }
+  }
+}

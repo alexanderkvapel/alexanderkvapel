@@ -1,0 +1,42 @@
+.skills__list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: var(--nav-gap, 20px);
+
+  &-item {
+    display: flex;
+    gap: var(--s-gap, 10px);
+    align-items: center;
+
+    img {
+      block-size: 24px;
+      inline-size: 24px;
+    }
+
+    p {
+      cursor: default;
+    }
+
+    &:hover {
+      scale: 1.2;
+
+      img {
+        rotate: 360deg;
+      }
+    }
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .skills__list {
+    &-item {
+      transition: scale 0.6s ease-out;
+
+      img {
+        transition: rotate 0.6s ease-in-out;
+      }
+    }
+  }
+}

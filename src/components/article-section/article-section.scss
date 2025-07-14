@@ -1,0 +1,29 @@
+%brackets {
+  position: absolute;
+  color: var(--dark-accent-color, #1b6e6d);
+  font-family: var(--font-monospace, 'JetBrains Mono'), monospace;
+  font-weight: 400;
+  font-size: var(--title-fs, 32px);
+  line-height: 1;
+  inset-inline-start: calc(-1 * 2ch);
+}
+
+.article-section {
+  position: relative;
+  margin-inline-start: 2ch;
+  padding-inline-end: 2ch;
+  padding-block: calc(var(--s-gap, 10px) + 1em);
+  font-size: var(--title-fs, 32px);
+
+  &::before {
+    @extend %brackets;
+    content: '{';
+    inset-block-start: var(--s-gap, 10px);
+  }
+
+  &::after {
+    @extend %brackets;
+    content: '}';
+    inset-block-end: 0;
+  }
+}

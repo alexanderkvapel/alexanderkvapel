@@ -1,0 +1,58 @@
+$breakpoint-tablet: 920px;
+$breakpoint-mobile: 530px;
+
+:root {
+  --bg-color: #02030e;
+  --text-color: #c2c6dd;
+  --light-accent-color: #d5b87c;
+  --dark-accent-color: #1b6e6d;
+
+  --font-main: 'Roboto';
+  --font-monospace: 'JetBrains Mono';
+
+  --main-fs: 16px;
+  --menu-button-fs: 16px;
+  --button-fs: 28px;
+  --h1-fs: clamp(3.25rem, 2.6338rem + 2.6291vw, 5rem);
+  --title-fs: clamp(1.625rem, 1.0088rem + 2.6291vw, 3.375rem);
+  --subtitle-fs: clamp(1.3125rem, 0.9824rem + 1.4085vw, 2.25rem);
+  --text-fs: clamp(1rem, 0.8239rem + 0.7512vw, 1.5rem);
+  --accent-text-fs: clamp(1.3125rem, 1.0704rem + 1.0329vw, 2rem);
+
+  --header-block-size: 72px;
+  --section-block-size: 100vh;
+  --section-min-block-size: 578px;
+  --svg-logo-size: 32px;
+  --textarea-rows: 4em;
+  --animated-text-inline-size: 21.2ch;
+
+  --xs-gap: 5px;
+  --s-gap: 10px;
+  --m-gap: 20px;
+  --l-gap: 30px;
+  --xl-gap: 40px;
+  --content-wrapper-gap: 20px;
+  --nav-gap: 20px;
+
+  --btn-border-radius: 10px;
+
+  --animation-steps: 21;
+}
+
+@media (width < $breakpoint-tablet) {
+  :root {
+    --button-fs: 20px;
+    --menu-button-fs: 24px;
+
+    --section-block-size: 100dvh;
+    --section-min-block-size: 652px;
+    --textarea-rows: 2em;
+  }
+}
+
+@media (width < $breakpoint-mobile) {
+  :root {
+    --section-min-block-size: 575px;
+    --svg-logo-size: 24px;
+  }
+}

@@ -1,0 +1,39 @@
+.form__textfield {
+  border: 1px solid var(--text-color, #c2c6dd);
+  border-radius: 10px;
+  padding: var(--s-gap, 10px);
+  color: var(--text-color, #c2c6dd);
+  font-weight: inherit;
+  font-size: var(--text-fs, 16px);
+  line-height: 100%;
+  background-color: transparent;
+  caret-color: var(--text-color, #c2c6dd);
+
+  &:focus {
+    outline: none;
+  }
+
+  &:focus-visible {
+    border-color: var(--dark-accent-color, #1b6e6d);
+    box-shadow: 4px 0 16px 0 var(--dark-accent-color, #1b6e6d);
+  }
+}
+
+textarea.form__textfield {
+  resize: none;
+  block-size: calc(var(--textarea-rows, 4em) + 2 * var(--s-gap, 10px) + 2px);
+}
+
+@media (width < $breakpoint-mobile) {
+  .form__textfield {
+    padding: 7px;
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .form__textfield {
+    transition:
+      border-color 0.3s,
+      box-shadow 0.3s;
+  }
+}

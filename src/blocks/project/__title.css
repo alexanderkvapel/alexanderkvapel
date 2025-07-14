@@ -1,9 +1,0 @@
-.project__title {
-  display: -webkit-box;
-  overflow: hidden;
-  color: var(--light-accent-color, #d5b87c);
-  font-size: var(--subtitle-fs, 21px);
-  line-height: 100%;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 1;
-}

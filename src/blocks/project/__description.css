@@ -1,8 +1,0 @@
-.project__description {
-  display: -webkit-box;
-  overflow: hidden;
-  font-size: var(--text-fs, 16px);
-  line-height: 100%;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 1;
-}

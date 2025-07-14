@@ -1,0 +1,66 @@
+$animations: ('first', 21.2ch, 21),
+            ('second', 10.2ch, 10),
+            ('third', 19.2ch, 19);
+
+@keyframes typing {
+  0% {
+    inline-size: 0;
+  }
+  50%,
+  75% {
+    inline-size: var(--animated-text-inline-size, 21.2ch);
+  }
+  100% {
+    inline-size: 0;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+.animated-wrapper {
+  overflow: auto;
+
+  &__text {
+    overflow: hidden;
+    color: var(--dark-accent-color, #1b6e6d);
+    font-family: var(--font-monospace, 'JetBrains Mono'), monospace;
+    font-weight: 400;
+    font-size: var(--accent-text-fs, 24px);
+    line-height: 1;
+    text-transform: uppercase;
+    max-inline-size: var(--animated-text-inline-size, 21.2ch);
+    white-space: nowrap;
+  }
+
+  &__animation {
+    @each $name, $inline-size, $steps in $animations {
+      &--#{$name} {
+        --animated-text-inline-size: #{$inline-size};
+      }
+    }
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .animated-wrapper {
+    &__text {
+      border-inline-end: 2px solid currentColor;
+      animation:
+        typing 4s steps(var(--animation-steps, 21)) infinite,
+        blink 0.5s step-end infinite alternate;
+      will-change: inline-size;
+    }
+
+    &__animation {
+      @each $name, $inline-size, $steps in $animations {
+        &--#{$name} {
+          --animation-steps: #{$steps};
+        }
+      }
+    }
+  }
+}

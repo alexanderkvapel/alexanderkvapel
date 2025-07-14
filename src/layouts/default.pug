@@ -19,10 +19,10 @@ html(lang='ru')
     link(rel='icon', href='./icons/icon.svg', type='image/svg+xml')
     link(rel='apple-touch-icon', href='./icons/icon.png')
     title Александр Квапель &bull; Front End Разработчик
-    link(rel='stylesheet', href='./bundle.css')
+    link(rel='stylesheet', href='./default.css')
   body.page
-    include ../blocks/header/header.pug
+    include ../components/header/header.pug
     main.main
       block main-content
-      include ../blocks/footer/footer.pug
+      include ../components/footer/footer.pug
     script(src='./scripts/script.js')

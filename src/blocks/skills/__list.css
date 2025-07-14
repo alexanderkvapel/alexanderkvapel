@@ -1,7 +1,0 @@
-.skills__list {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  gap: var(--nav-gap, 20px);
-}

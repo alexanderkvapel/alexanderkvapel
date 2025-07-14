@@ -1,0 +1,19 @@
+.menu__button {
+  font-size: var(--menu-button-fs, 16px);
+  line-height: 1;
+  text-transform: uppercase;
+  cursor: pointer;
+
+  &:hover {
+    color: var(--dark-accent-color, #1b6e6d);
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &:focus-visible {
+    outline: 1px solid var(--text-color, #c2c6dd);
+    outline-offset: 2px;
+  }
+}
