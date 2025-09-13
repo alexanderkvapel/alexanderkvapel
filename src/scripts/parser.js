@@ -1,0 +1,9 @@
+export const logoElements = document.querySelectorAll('.logo');
+export const menuElement = document.querySelector('.menu');
+export const menuItemElements = document.querySelectorAll('button[data-scroll-to^="."]');
+export const menuButtonElement = document.querySelector('.menu-button');
+export const heroElement = document.querySelector('.hero');
+export const mainElement = document.querySelector('.main');
+export const sectionElements = document.querySelectorAll('.section');
+export const animatedTextElement = document.querySelector('.animated-wrapper__text');
+export const formElement = document.querySelector('.form');

@@ -1,14 +1,13 @@
-
 const gulp = require('gulp');
-const concat = require('gulp-concat-css');
-const plumber = require('gulp-plumber');
+// const concat = require('gulp-concat-css');
+// const plumber = require('gulp-plumber');
 const del = require('del');
 const browserSync = require('browser-sync').create();
 const postcss = require('gulp-postcss');
 const autoprefixer = require('autoprefixer');
 const mediaquery = require('postcss-combine-media-query');
 const cssnano = require('cssnano');
-const htmlMinify = require('html-minifier');
+// const htmlMinify = require('html-minifier');
 const gulppug = require('gulp-pug');
 const sass = require('gulp-sass')(require('sass'));
 
@@ -17,10 +16,11 @@ function serve() {
     server: {
       baseDir: './dist'
     },
+    // listen: '192.168.20.110',
     port: 3000,
     ui: {
-      port: 3001
-    }
+      port: 3001,
+    },
   });
 }
 
